@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMainComponent } from './app-main/app-main.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import {HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{
     provide: LocationStrategy,
