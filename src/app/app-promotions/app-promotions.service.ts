@@ -13,32 +13,38 @@ export class PromotionType {
   displayName: string;
   name: string;
   vendors: number;
+  isSelected: boolean;
 }
 
 export const promotionTypes: PromotionType[] = [
   {
     displayName: 'Bill Payments',
     name: 'bill_payments',
-    vendors: 20
+    vendors: 20,
+    isSelected: false
   },
   {
     displayName: 'Activity Trackers',
     name: 'activity_trackers',
-    vendors: 2
+    vendors: 2,
+    isSelected: false
   },
   {
     displayName: 'Loan Providers',
     name: 'loan_providers',
-    vendors: 4
+    vendors: 4,
+    isSelected: false
   },
   {
     displayName: 'Shopping Vendors',
     name: 'shopping_vendors',
-    vendors: 6
+    vendors: 6,
+    isSelected: false
   },
   {
     displayName: 'Utilities',
     name: 'utilities',
-    vendors: 8
+    vendors: 8,
+    isSelected: false
   }
 ]

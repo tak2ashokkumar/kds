@@ -26,6 +26,13 @@ export class AppPromotionsComponent implements OnInit, OnDestroy {
   }
 
   getRelatedReferrals(view: PromotionType) {
+    this.promotionsTypes.map(promotionType => {
+      if (promotionType.name == view.name) {
+        promotionType.isSelected = true;
+      } else {
+        promotionType.isSelected = false;
+      }
+    })
     this.router.navigate([view.name], { relativeTo: this.route })
   }
 
