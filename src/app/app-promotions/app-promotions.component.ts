@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { AppPromotionsService } from './app-promotions.service';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { AppPromotionsService, PromotionType, promotionTypes } from './app-promotions.service';
+import { Subject } from 'rxjs';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-app-promotions',
@@ -7,16 +9,24 @@ import { AppPromotionsService } from './app-promotions.service';
   styleUrls: ['./app-promotions.component.scss'],
   providers: [AppPromotionsService]
 })
-export class AppPromotionsComponent implements OnInit {
+export class AppPromotionsComponent implements OnInit, OnDestroy {
 
-  constructor(private promotionsService: AppPromotionsService) { }
+  private ngUnsubscribe = new Subject();
+  promotionsTypes: PromotionType[] = promotionTypes;
 
-  ngOnInit() {
-    console.log('in app promotions');
+  constructor(private promotionsService: AppPromotionsService,
+    private router: Router,
+    private route: ActivatedRoute) { }
+
+  ngOnInit() { }
+
+  ngOnDestroy() {
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
   }
 
-  getLiveScores() {
-    // this.promotionsService.
+  getRelatedReferrals(view: PromotionType) {
+    this.router.navigate([view.name], { relativeTo: this.route })
   }
 
 }

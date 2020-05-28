@@ -1,35 +1,16 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-        <img src="assets/images/kds-logo-sm.png" alt="No Image">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav offset-10">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Referral codes
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" [routerLink]="'./cred'">CRED</a>
-                    <a class="dropdown-item" [routerLink]="'./true_balance'">True Balance</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+<app-header></app-header>
 <div class="container-fluid app-body">
     <div class="row">
-        <div class="col-2">
-        </div>
-        <div class="col-7 app-content">
-            <router-outlet></router-outlet>
-        </div>
-        <div class="col-3">
-
+        <div class="col-2 mt-4" *ngFor="let promotionType of promotionsTypes; let i = index">
+            <div class="card overflow-hidden equalize-card" (click)="getRelatedReferrals(promotionType)">
+                <div class="card-body p-4 d-flex align-items-center">
+                    <div>
+                        <div class="text-value text-uppercase text-primary">{{promotionType.displayName}}</div>
+                        <div class="text-muted text-uppercase font-weight-bold small">{{promotionType.vendors}} vendors</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <router-outlet></router-outlet>
 </div>
