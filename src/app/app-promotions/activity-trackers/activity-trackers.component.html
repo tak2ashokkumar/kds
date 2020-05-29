@@ -26,7 +26,17 @@
 
 <ng-template #stepSetGoInfo>
     <div class="alert alert-success mb-0" role="alert">
-        <h4 class="alert-heading">StepSetGo</h4>
+        <strong class="alert-heading h4 mb-0">StepSetGo</strong>
+        <div class="d-inline-block pull-right">
+            <button class="btn btn-dark mr-1" type="button" (click)="reset()">
+                <i class="fa fa-refresh "></i>
+                <span>Download on the <br> App Store</span>
+            </button>
+            <!-- <button class="btn btn-success btn-sm mr-1" type="button" (click)="showHelp()">
+                <i class="fa fa-info-circle "> </i>
+            </button> -->
+            <!-- <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+        </div>
         <p class="mt-4">CRED tagged as the “most rewarding Credit card payment app ever” indeed stands by the tag.
             CRED partnered with brands like BMS, Uber, Amazon, etc. to give unmatched rewards, experiences and
             upgrades every month. It's definitely a benefit to pay credit card bills via CRED..</p>

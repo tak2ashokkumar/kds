@@ -1,8 +1,21 @@
 // Here you can add other styles
-.bg-header-dark{
+.bg-header-dark {
     background-color: #213458 !important;
 }
 
-.mt-15p{
+.alert-success-card,
+.alert-success-card-header {
+    color: #18603a !important;
+    background-color: #d5f1de !important;
+    border-color: #c4ebd1 !important;
+}
+
+.btn-sm i, .btn-group-sm > .btn i, .btn-sm .c-icon, .btn-group-sm > .btn .c-icon{
+    height: auto !important;
+    width: auto !important;
+    margin: auto !important;
+}
+
+.mt-15p {
     margin-top: 15% !important;
 }
