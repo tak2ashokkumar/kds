@@ -1,13 +1,4 @@
-// Variable overrides
-
-// $simple-line-font-path: "~simple-line-icons/" !default;
 $fa-font-path: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/" !default;
-// Color system
-// stylelint-disable
-
-// Body
-//
-// Settings for the `<body>` element.
 
 $body-bg: #f4f3ef !default;
 
@@ -37,7 +28,7 @@ $grays: map-merge(
     "600": $gray-600,
     "700": $gray-700,
     "800": $gray-800,
-    "900": $gray-900
+    "900": $gray-900,
   ),
   $grays
 );
@@ -46,7 +37,7 @@ $blue: #378ad8 !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #CC0000 !default;
+$red: #cc0000 !default;
 $orange: #ff8800 !default;
 $yellow: #f8cb00 !default;
 $green: #0cbb70 !default;
@@ -70,7 +61,7 @@ $colors: map-merge(
     "light-blue": $light-blue,
     "white": $white,
     "gray": $gray-600,
-    "gray-dark": $gray-800
+    "gray-dark": $gray-800,
   ),
   $colors
 );
@@ -94,7 +85,7 @@ $theme-colors: map-merge(
     "warning": $warning,
     "danger": $danger,
     "light": $light,
-    "dark": $dark
+    "dark": $dark,
   ),
   $theme-colors
 );
@@ -155,7 +146,7 @@ $brands-colors: map-merge(
     "spotify": $spotify,
     "vine": $vine,
     "foursquare": $foursquare,
-    "vimeo": $vimeo
+    "vimeo": $vimeo,
   ),
   $brands-colors
 );
@@ -180,52 +171,5 @@ $navbar-brand-width: 175px !default;
 $popover-max-width: 100% !default;
 
 $floating-terminal: #8795ae !default;
-
-$hypervisor: #f2b53f !default;
-$vms: #22a6eb !default;
-$bms: #ff4545 !default;
-$otherdev: #edce3e !default;
-$firewalls: #e56717 !default;
-$lbs: #a66829 !default;
-$switches: #009688 !default;
-$cabinets: #000080 !default;
-$pdus: #008080 !default;
-
-$device-type-colors: () !default;
-$device-type-colors: map-merge(
-  (
-    "hypervisor": $hypervisor,
-    "vms": $vms,
-    "bms": $bms,
-    "lbs": $lbs,
-    "otherdev": $otherdev,
-    "firewalls": $firewalls,
-    "switches": $switches,
-    "cabinets": $cabinets,
-    "pdus": $pdus
-  ),
-  $device-type-colors
-);
-
-//heatmap colors
-$cv-frozen: #0000b3 !default;
-$cv-less: #99ccff !default;
-$cv-normal: #33cc33 !default;
-$cv-warning: #ffff99 !default;
-$cv-high: #eab43c !default;
-$cv-danger: #d10d0d !default;
-
-$heatmap-colors: () !default;
-$heatmap-colors: map-merge(
-  (
-    "cv-frozen": $cv-frozen,
-    "cv-less": $cv-less,
-    "cv-normal": $cv-normal,
-    "cv-warning": $cv-warning,
-    "cv-high": $cv-high,
-    "cv-danger": $cv-danger
-  ),
-  $heatmap-colors
-);
 
 $font-xs: 0.65rem !default;

@@ -1,22 +1,22 @@
 <app-header></app-header>
 <div class="container-fluid app-body">
     <div class="row">
-        <div class="col-2 mt-4" *ngFor="let appCategory of appCategories; let i = index">
+        <div class="col-6 col-sm-3 col-md-2 mt-4" *ngFor="let appCategory of appCategories; let i = index">
             <div class="card overflow-hidden equalize-card mb-3" (click)="getRelatedVendors(appCategory)"
                 [ngClass]="{'border-success active': appCategory.name == selectedAppCategory.name}">
                 <div class="card-body p-4 d-flex align-items-center">
                     <div>
-                        <div class="text-value text-uppercase text-primary">{{appCategory.displayName}}</div>
-                        <div class="text-muted text-uppercase font-weight-bold small">{{appCategory.vendors}} vendors
+                        <div class="category-heading text-uppercase text-primary font-weight-bold">{{appCategory.displayName}}</div>
+                        <div class="text-muted text-uppercase font-weight-bold font-xs">{{appCategory.vendors}} vendors
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row p-3" style="background-color: #fff;min-height: 75vh;">
-        <div class="col-4 pl-0">
-            <table class="table table-responsive-sm table-hover table-outline mb-0">
+    <div class="row mt-4" style="min-height: 75vh;">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 mb-4 px-2">
+            <table class="table table-responsive-sm table-hover table-outline mb-0" style="background-color: #fff;">
                 <thead class="thead-light">
                     <tr>
                         <th>Vendor</th>
@@ -29,23 +29,18 @@
                         (click)="showVendorData(vendor)">
                         <td class="font-weight-bold">{{vendor.displayName}}</td>
                         <td class="d-flex align-items-center">
-                            <div class="w-75">
-                                <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
-                                    <strong>{{vendor.referral_link}}</strong>
-                                </a>
-                                <span *ngIf="!vendor.referral_link" class="text-primary">
-                                    <strong>{{vendor.referral_code || 'Not Available' }}</strong>
-                                </span>
-                            </div>
-                            <div class="w-25" *ngIf="vendor.name == selectedVendor.name">
-                                <span class="fa fa-hand-o-right text-primary pull-right"></span>
-                            </div>
+                            <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
+                                <strong>{{vendor.referral_link}}</strong>
+                            </a>
+                            <span *ngIf="!vendor.referral_link" class="text-primary">
+                                <strong>{{vendor.referral_code || 'N/A' }}</strong>
+                            </span>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="col-8">
+        <div class="col-sm-12 col-md-6 mb-4 col-lg-7 col-xl-8 px-2">
             <ng-container *ngTemplateOutlet="referralsInfo"></ng-container>
         </div>
         <hr>
@@ -67,24 +62,24 @@
 
 <ng-template #referralsInfoHeader>
     <div class="card-header alert-success-card-header d-flex align-items-center px-2 py-2">
-        <div class="w-75 h4 mb-0">{{selectedVendor.displayName}}</div>
-        <div class="w-25">
+        <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.displayName}}</div>
+        <div class="w-55">
             <a class="mr-1 pull-right font-weight-bold" [href]="selectedVendor.play_store_download_link">
                 <i class="c-icon c-icon-xl cib-google-play"></i>
             </a>
             <a class="mr-1 pull-right font-weight-bold" [href]="selectedVendor.app_store_download_link">
                 <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
             </a>
-            <a class="pull-right"> Download app from : &nbsp;&nbsp;</a>
+            <a class="pull-right"> Download from : &nbsp;&nbsp;</a>
         </div>
     </div>
 </ng-template>
 
 <ng-template #appFeatures>
-    <p class="my-4">
-        <span class="badge badge-pill bg-header-dark text-white mr-3 p-3"
+    <p class="my-2">
+        <span class="badge badge-pill bg-header-dark text-white mr-2 my-2 p-2"
             *ngFor="let feature of selectedVendor.features">
-            <strong>{{feature}}</strong>
+            <span>{{feature}}</span>
         </span>
     </p>
 </ng-template>
