@@ -6,7 +6,8 @@
                 [ngClass]="{'border-success active': appCategory.name == selectedAppCategory.name}">
                 <div class="card-body p-4 d-flex align-items-center">
                     <div>
-                        <div class="category-heading text-uppercase text-primary font-weight-bold">{{appCategory.displayName}}</div>
+                        <div class="category-heading text-uppercase text-primary font-weight-bold">
+                            {{appCategory.displayName}}</div>
                         <div class="text-muted text-uppercase font-weight-bold font-xs">{{appCategory.vendors}} vendors
                         </div>
                     </div>
@@ -14,7 +15,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4" style="min-height: 75vh;">
+    <div class="row mt-4" style="min-height: 70vh;">
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 mb-4 px-2">
             <table class="table table-responsive-sm table-hover table-outline mb-0" style="background-color: #fff;">
                 <thead class="thead-light">
@@ -32,8 +33,11 @@
                             <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
                                 <strong>{{vendor.referral_link}}</strong>
                             </a>
-                            <span *ngIf="!vendor.referral_link" class="text-primary">
-                                <strong>{{vendor.referral_code || 'N/A' }}</strong>
+                            <span *ngIf="vendor.referral_code" class="header-dark-text-color">
+                                <strong>{{vendor.referral_code}}</strong>
+                            </span>
+                            <span *ngIf="!vendor.referral_link && !vendor.referral_code">
+                                <span class="text-secondary">N/A</span>
                             </span>
                         </td>
                     </tr>
