@@ -74,80 +74,47 @@
         </table>
     </div>
     <div class="col-8">
-        <ng-contaner *ngTemplateOutlet="credInfo"></ng-contaner>
+        <ng-container *ngTemplateOutlet="credInfo"></ng-container>
     </div>
     <hr>
 </div>
 
 <ng-template #credInfo>
-    <!-- <div class="alert alert-success mb-0" role="alert">
-        <h4 class="alert-heading">CRED</h4>
-        <p class="mt-4">CRED tagged as the “most rewarding Credit card payment app ever” indeed stands by the tag.
-            CRED partnered with brands like BMS, Uber, Amazon, etc. to give unmatched rewards, experiences and
-            upgrades every month. It's definitely a benefit to pay credit card bills via CRED..</p>
-        <p> Here's the referral link from where you get INR 150 voucher on UBER: (there's no referral code as
-            such, install from the following link)</p>
-        <a href="https://cred.onelink.me/spQx/375c1f58" target="_blank"> https://cred.onelink.me/spQx/375c1f58 </a>
-        <br><br>
-        <hr>
-        <p class="mb-0">
-            <strong>Note:</strong> <br> You will get equal CRED points of your credit score. Means if your credit
-            score is 600 then you will get 600 points. And if you will refers some one then you will get
-            Uber 150rs voucher. And if you will refers three persons then you will get 750 Amazon voucher.
-        </p>
-    </div> -->
     <div class="card alert-success-card">
-        <!-- <div class="card-header font-weight-bold h1 py-0">
-            <div></div>
-            <div class="card-header-actions text-right">
-                <a class="card-header-action btn-setting" href="#">
-                    <img src="{{imagesUrl}}utils/apple_app_store.png" alt="" style="width: 35%;">
-                </a>
-                <a class="card-header-action btn-minimize" href="#">
-                    <img src="{{imagesUrl}}utils/google_play_store.png" alt="" style="width: 35%;">
-                </a>
-            </div>
-        </div> -->
         <div class="card-header alert-success-card-header d-flex align-items-center font-weight-bold px-2 py-2">
-            <div class="w-50 h4 mb-0">
-                CRED
-            </div>
-            <div class="w-50 card-header-actions text-right">
-                <!-- <a class="card-header-action btn-setting" href="#">
-                    <img src="{{imagesUrl}}utils/apple_app_store.png" alt="" style="width: 30%;">
+            <div class="w-75 h4 mb-0">CRED</div>
+            <div class="w-25">
+                <a class="mr-1 pull-right">
+                    <i class="c-icon c-icon-xl cib-google-play"></i>
                 </a>
-                <a class="card-header-action btn-minimize" href="#">
-                    <img src="{{imagesUrl}}utils/google_play_store.png" alt="" style="width: 30%;">
-                </a> -->
-                <a class="btn btn-sm btn-dark text-white  mr-1 d-flex align-items-center pull-right" (click)="reset()">
-                    <i class="c-icon c-icon-2xl mt-5 mb-2 cib-google-play"></i>
-                    <span class="font-weight-bold">
-                        <span class="small font-weight-bold">Get it on </span> <br>
-                        <span class="text-Uppercase"> Google Play</span>
-                    </span>
-                </a>
-                <a class="btn btn-sm btn-dark text-white mr-1 d-flex align-items-center pull-right" (click)="reset()">
-                    <i class="c-icon c-icon-2xl mr-3 cib-apple"></i>
-                    <span class="font-weight-bold">
-                        <span class="small font-weight-bold">Download on the </span> <br>
-                        <span class="text-Uppercase"> App Store</span>
-                    </span>
+                <a class="mr-1 pull-right">
+                    <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
                 </a>
             </div>
         </div>
         <div class="card-body">
-            <p class="mt-4">CRED tagged as the “most rewarding Credit card payment app ever” indeed stands by the tag.
-                CRED partnered with brands like BMS, Uber, Amazon, etc. to give unmatched rewards, experiences and
-                upgrades every month. It's definitely a benefit to pay credit card bills via CRED..</p>
-            <p> Here's the referral link from where you get INR 150 voucher on UBER: (there's no referral code as
-                such, install from the following link)</p>
-            <a href="https://cred.onelink.me/spQx/375c1f58" target="_blank"> https://cred.onelink.me/spQx/375c1f58 </a>
-            <br><br>
+            <p>
+                <span class="badge badge-pill badge-primary mr-2 p-2">
+                    <strong>Credit card bill Payment</strong>
+                </span>
+                <span class="badge badge-pill badge-primary mr-2 p-2">
+                    <strong>Rent pay from Credit Card</strong>
+                </span>
+                <span class="badge badge-pill badge-primary mr-2 p-2">
+                    <strong>Instant loan in Covid-19 Situation</strong>
+                </span>
+            </p>
             <hr>
-            <p class="mb-0">
-                <strong>Note:</strong> <br> You will get equal CRED points of your credit score. Means if your credit
-                score is 600 then you will get 600 points. And if you will refers some one then you will get
-                Uber 150rs voucher. And if you will refers three persons then you will get 750 Amazon voucher.
+            <p class="font-weight-bold">
+                CRED is a members only credit card bill payment platform that rewards its members for clearing their
+                credit card bills on time. CRED members get access to exclusive rewards and experiences from premier
+                brands upon clearing their credit card bills on CRED.
+            </p>
+            <!-- <hr> -->
+            <p class="font-weight-bold">
+                Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your
+                credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel
+                rewards and dining rewards. Some of the offers include:
             </p>
         </div>
     </div>

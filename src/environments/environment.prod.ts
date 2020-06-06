@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  images: 'assets/images/',
+  staticData: 'assets/static-data/',
 };

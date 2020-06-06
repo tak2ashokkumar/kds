@@ -8,6 +8,17 @@ export class AppPromotionsService {
   getPromotionTypes(): PromotionType[] {
     return promotionTypes;
   }
+
+
+}
+
+export class AppDescriptionData {
+  name: string;
+  displayName: string;
+  features: string[];
+  description: string[];
+  play_store_download_link: string;
+  app_store_download_link: string;
 }
 export class PromotionType {
   displayName: string;
