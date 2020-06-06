@@ -68,13 +68,15 @@
     <div class="card-header alert-success-card-header d-flex align-items-center px-2 py-2">
         <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.displayName}}</div>
         <div class="w-55">
-            <a class="mr-1 pull-right font-weight-bold" [href]="selectedVendor.play_store_download_link">
-                <i class="c-icon c-icon-xl cib-google-play"></i>
-            </a>
-            <a class="mr-1 pull-right font-weight-bold" [href]="selectedVendor.app_store_download_link">
-                <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
-            </a>
-            <a class="pull-right"> Download from : &nbsp;&nbsp;</a>
+            <div class="d-flex align-items-center pull-right">
+                <a class=""> Download from : &nbsp;&nbsp;</a>
+                <a class="mr-1 font-weight-bold" [href]="selectedVendor.app_store_download_link">
+                    <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
+                </a>
+                <a class="mr-1 font-weight-bold" [href]="selectedVendor.play_store_download_link">
+                    <i class="c-icon c-icon-xl cib-google-play"></i>
+                </a>
+            </div>
         </div>
     </div>
 </ng-template>
