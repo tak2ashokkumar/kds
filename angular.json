@@ -22,7 +22,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/@coreui/icons/css/all.min.css",
+              "node_modules/@coreui/icons/css/brand.min.css",
               "src/assets/scss/style.scss",
               "src/styles.scss"
             ],
