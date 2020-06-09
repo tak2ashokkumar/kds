@@ -7,3 +7,14 @@
 
 // If you want to add something do it here
 @import "custom";
+
+
+//Variable based custom css
+.font-xs {
+    font-size: $font-xs !important;
+}
+
+.disabled {
+    pointer-events: none !important;
+    color: $gray-300 !important;
+}

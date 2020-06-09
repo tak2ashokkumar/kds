@@ -28,7 +28,7 @@
                     <tr *ngFor="let vendor of categoryVendors; let i = index"
                         [ngClass]="{'table-success': vendor.name == selectedVendor.name}"
                         (click)="showVendorData(vendor)">
-                        <td class="font-weight-bold">{{vendor.displayName}}</td>
+                        <td class="font-weight-bold">{{vendor.display_name}}</td>
                         <td class="d-flex align-items-center">
                             <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
                                 <strong>{{vendor.referral_link}}</strong>
@@ -66,14 +66,16 @@
 
 <ng-template #referralsInfoHeader>
     <div class="card-header alert-success-card-header d-flex align-items-center px-2 py-2">
-        <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.displayName}}</div>
+        <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.display_name}}</div>
         <div class="w-55">
             <div class="d-flex align-items-center pull-right">
                 <a class=""> Download from : &nbsp;&nbsp;</a>
-                <a class="mr-1 font-weight-bold" [href]="selectedVendor.app_store_download_link">
+                <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.apple_app_store_link"
+                [href]="selectedVendor.apple_app_store_link" target="_blank">
                     <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
                 </a>
-                <a class="mr-1 font-weight-bold" [href]="selectedVendor.play_store_download_link">
+                <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.google_play_store_link"
+                [href]="selectedVendor.google_play_store_link" target="_blank">
                     <i class="c-icon c-icon-xl cib-google-play"></i>
                 </a>
             </div>

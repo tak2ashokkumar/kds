@@ -19,14 +19,15 @@ export class ReferralCodesService {
 }
 
 export class VendorDescriptionData {
+  id: string;
   name: string;
-  displayName: string;
+  display_name: string;
   features: string[];
   description: string[];
   referral_code: string;
   referral_link: string;
-  play_store_download_link: string;
-  app_store_download_link: string;
+  google_play_store_link: string;
+  apple_app_store_link: string;
 }
 
 export class ApplicationCategory {
@@ -41,11 +42,6 @@ export const applicationCategories: ApplicationCategory[] = [
     name: 'bill_payments',
     vendors: 20,
   },
-  // {
-  //   displayName: 'Activity Trackers',
-  //   name: 'activity_trackers',
-  //   vendors: 2,
-  // },
   {
     displayName: 'Shopping Vendors',
     name: 'shopping_vendors',

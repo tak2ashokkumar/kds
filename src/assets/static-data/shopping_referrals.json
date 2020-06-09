@@ -1,7 +1,7 @@
 [
     {
         "name": "amazon",
-        "displayName": "Amazon",
+        "display_name": "Amazon",
         "features": [
             "Credit Card bill Payment",
             "Rent pay from Credit Card",
@@ -18,7 +18,7 @@
     },
     {
         "name": "flipkart",
-        "displayName": "Flipkart",
+        "display_name": "Flipkart",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -33,7 +33,7 @@
     },
     {
         "name": "paytm_mall",
-        "displayName": "Paytm Mall",
+        "display_name": "Paytm Mall",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -48,7 +48,7 @@
     },
     {
         "name": "snapdeal",
-        "displayName": "Snapdeal",
+        "display_name": "Snapdeal",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -63,7 +63,7 @@
     },
     {
         "name": "shop_clues",
-        "displayName": "Shop Clues",
+        "display_name": "Shop Clues",
         "features": [
             "Credit Card bill Payment"
         ],

@@ -1,7 +1,7 @@
 [
     {
         "name": "cred",
-        "displayName": "Cred",
+        "display_name": "Cred",
         "features": [
             "Credit Card bill Payment",
             "Rent pay from Credit Card",
@@ -13,42 +13,57 @@
         ],
         "referral_code": "",
         "referral_link": "https://cred.onelink.me/spQx/375c1f58",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp",
+        "apple_app_store_link": "https://apps.apple.com/us/app/cred-pay-credit-card-bills/id1428580080"
     },
     {
         "name": "paytm",
-        "displayName": "Paytm",
+        "display_name": "Paytm",
         "features": [
-            "Credit Card bill Payment"
+            "Mobile Recharge & Bill Payments",
+            "Bank to Bank Money Transfer",
+            "Pay Online & Offline Stores",
+            "UPI App, Check Bank Balance Instantly",
+            "Movies, Amusement Parks & Events Tickets",
+            "Deals & Discount Vouchers",
+            "Book Tickets for Train, Bus & Flight & Hotels",
+            "Paytm First Games",
+            "Online Shopping"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "Paytm (पेटीएम), with over 300 million downloads, is India's most popular payments & recharge app! Make payments, send money or receive money in any linked bank account on Paytm. No need to run to ATM anymore as you can make safe & secure payments directly from your bank accounts with Paytm, most widely accepted payments app in India",
+            "Make online payments from Paytm at all popular online stores & apps, make bank to bank money transfer, UPI payments, mobile recharge. Or play games like Ludo, Rummy, Teen Patti, 8 Ball Pool, Cricket Games on your phone & win prizes."
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=net.one97.paytm",
         "apple_app_store_link": ""
     },
     {
         "name": "mobikwik",
-        "displayName": "Mobikwik",
+        "display_name": "Mobikwik",
         "features": [
-            "Credit Card bill Payment"
+            "MOBILE RECHARGE",
+            "BILL PAYMENT",
+            "INSTANT PERSONAL LOAN",
+            "MONEY TRANSFER",
+            "INSURANCE",
+            "MUTUAL FUND",
+            "DIGITAL GOLD",
+            "EXPENSE MANAGER"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "Use MobiKwik for mobile prepaid recharge, postpaid bill payment, utility bills, electricity bill payments, water bill payment, insurance payment & DTH recharge. Transfer money from bank to bank instantly. Buy digital gold, insurance, invest in mutual funds & get instant personal loan on MobiKwik.",
+            "Book your bus, flight, train & travel tickets & save big. Track expenditure from all payment instruments and simplify your expenses."
         ],
         "referral_code": "YT9K4B",
         "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.mobikwik_new",
+        "apple_app_store_link": "https://apps.apple.com/us/app/mobikwik-recharge-bill-pay/id600002523"
     },
     {
         "name": "amazon_pay",
-        "displayName": "Amazon Pay",
+        "display_name": "Amazon Pay",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -57,43 +72,54 @@
             "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "",
+        "referral_link": "https://amzn.in/j5jTaep",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping",
         "apple_app_store_link": ""
     },
     {
         "name": "payzap",
-        "displayName": "Payzap",
+        "display_name": "Payzap",
         "features": [
-            "Credit Card bill Payment"
+            "Online Bill Payments",
+            "BharatQR Payments",
+            "Shopping",
+            "Movies",
+            "Great offers at SmartBuy"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "PayZapp is a complete payment solution giving you the power to pay in just One Click. PayZapp lets you recharge your mobile, DTH and data card, pay utility bills, compare and book flight tickets, bus and hotels, shop, buy movie tickets, music and groceries, avail great offers at SmartBuy, and send money to anyone in your phone book.",
+            "PayZapp is convenient, fast and secure. Link your Debit and Credit Card ek baar and pay karo baar baar. No need to re-load money again and again. Moreover your card details are secure with the bank and not stored on your mobile phone or on transacting sites. It uses a proprietary technology that conducts three security checks for each transaction."
         ],
         "referral_code": "tak2ashok",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.enstage.wibmo.hdfc",
         "apple_app_store_link": ""
     },
     {
         "name": "true_balance",
-        "displayName": "True Balance",
+        "display_name": "True Balance",
         "features": [
-            "Credit Card bill Payment"
+            "Personal Loan",
+            "Insurance",
+            "True PayLater & Recharge Loan",
+            "Shop Online",
+            "Postpaid Bill Payments & Prepaid Recharges",
+            "Gift Card",
+            "Gas & Electricity Bill Payment",
+            "DTH Recharges"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "True Balance is India's No. 1 reseller app that can help you earn money by Recharges, loan, payments and reselling. If you are looking for additional income, try True Balance & earn money from home or anywhere. Start your own business with Zero investment.",
+            "With an RBI Compliant Wallet and multiple payment options of Net banking, Credit Cards, Debit Cards and Gift card embedded with smart notifications, the app ensures you are never out of balance and always in control. Enjoy Promo Codes and Cashback on every transaction."
         ],
         "referral_code": "2P6NAFFC",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.balancehero.truebalance",
         "apple_app_store_link": ""
     },
     {
         "name": "free_charge",
-        "displayName": "Free Charge",
+        "display_name": "Free Charge",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -103,12 +129,12 @@
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.freecharge.android",
+        "apple_app_store_link": "https://apps.apple.com/us/app/recharge-mobile-dth-online/id877495926"
     },
     {
         "name": "oxygen_wallet",
-        "displayName": "Oxygen Wallet",
+        "display_name": "Oxygen Wallet",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -118,12 +144,12 @@
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.oxigen.oxigenwallet",
         "apple_app_store_link": ""
     },
     {
         "name": "airtel",
-        "displayName": "Airtel",
+        "display_name": "Airtel",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -133,12 +159,12 @@
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.myairtelapp",
+        "apple_app_store_link": "https://apps.apple.com/us/app/airtel-thanks-recharge-bank/id543184334"
     },
     {
         "name": "jio",
-        "displayName": "Jio",
+        "display_name": "Jio",
         "features": [
             "Credit Card bill Payment"
         ],
@@ -148,7 +174,7 @@
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.jio.myjio",
         "apple_app_store_link": ""
     }
 ]
