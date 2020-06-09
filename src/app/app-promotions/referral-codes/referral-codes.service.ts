@@ -38,6 +38,16 @@ export class ApplicationCategory {
 
 export const applicationCategories: ApplicationCategory[] = [
   {
+    displayName: 'Banking Apps',
+    name: 'banking',
+    vendors: 8,
+  },
+  {
+    displayName: 'Loan Providers',
+    name: 'loan_providers',
+    vendors: 4,
+  },
+  {
     displayName: 'Bill Payments',
     name: 'bill_payments',
     vendors: 20,
@@ -47,14 +57,9 @@ export const applicationCategories: ApplicationCategory[] = [
     name: 'shopping_vendors',
     vendors: 6,
   },
-  {
-    displayName: 'Loan Providers',
-    name: 'loan_providers',
-    vendors: 4,
-  },
-  {
-    displayName: 'Utilities',
-    name: 'utilities',
-    vendors: 8,
-  }
+  // {
+  //   displayName: 'Utilities',
+  //   name: 'utilities',
+  //   vendors: 8,
+  // }
 ]

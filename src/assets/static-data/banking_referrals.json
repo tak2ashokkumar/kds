@@ -1,0 +1,50 @@
+[
+    {
+        "name": "google_pay",
+        "display_name": "Google Pay (Tez)",
+        "features": [
+            "Conveniently pay bills",
+            "Recharge your prepaid mobile",
+            "Buy and sell 24K Gold",
+            "Book IRCTC train tickets",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Pay and receive money directly from your bank account",
+            "Multiple layers of security from your bank, UPI, and Google",
+            "Pay anyone. Even those without Google Pay",
+            "Get rewarded for money transfers"
+        ],
+        "description": [
+            "Send money to friends, pay bills and buy online, recharge your phone, or pay at the nearby café with Google Pay, a simple and secure payments app by Google.",
+            "The chaiwala nearby, neighbourhood kirana, and even your favorite salon can now accept payments on the spot with Tez Mode, all while keeping your personal and bank details private."
+        ],
+        "referral_code": "",
+        "referral_link": "https://g.co/payinvite/E21yd",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN",
+        "apple_app_store_link": ""
+    },
+    {
+        "name": "phonepe",
+        "display_name": "PhonePe",
+        "features": [
+            "Pay Credit Card Bills",
+            "Buy and Sell Gold",
+            "Buy PhonePe Gift Cards",
+            "Invest in Tax saving funds",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Transfer money with BHIM UPI",
+            "Recharge your mobile and DTH connection",
+            "Use your favourite Apps on PhonePe Switch",
+            "Manage and track refunds from shopping websites"
+        ],
+        "description": [
+            "PhonePe is a payments app that allows you to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, pay all your utility bills and also make instant payments at your favourite offline and online stores.",
+            "Link your bank account on the PhonePe app and transfer money with BHIM UPI instantly. The PhonePe app is safe and secure, meets all your payment and banking needs, and is much better than Internet banking. No need to remember IFSC codes, account numbers, or other details. Make instant bank transfers with BHIM UPI by just using a mobile number or a unique payment identity – your Virtual Payment Address (VPA)."
+        ],
+        "referral_code": "",
+        "referral_link": "https://phon.pe/ru_asho2xyk2",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN",
+        "apple_app_store_link": ""
+    }
+]

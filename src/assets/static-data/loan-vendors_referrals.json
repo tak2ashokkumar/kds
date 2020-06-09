@@ -27,35 +27,48 @@
         "name": "early_salary",
         "display_name": "Early Salary",
         "features": [
-            "Credit Card bill Payment"
+            "Advance salary loans at 24%-30% p.a. translating to 2% - 2.5% a month",
+            "Lowest processing fees ranging between 0% - 4% of the loan amount",
+            "Instant loan up to ₹ 2 lakh"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "EarlySalary is an Instant Salary Advance Loan App & Personal Loan App.Avail an instant personal loan ranging from ₹ 8,000 to ₹ 2 Lakh on the app and we will transfer cash to your bank account in just 10 minutes.",
+            "No credit history required, no prepayment charges and very low-interest rates!",
+            "First-time instant loan & personal loan applicants we’ve got your back too! EarlySalary makes use of a proprietary algorithm and formulates a ‘SocialWorth’ score (SW score) to provide the best experience to users in need of instant personal loans. All salaried individuals with a salary of Rs.18,000 & above can avail an instant cash loan by downloading the EarlySalary App now!"
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.earlysalary.android&hl=en",
         "apple_app_store_link": ""
     },
     {
         "name": "mobikwik",
         "display_name": "Mibikwik",
         "features": [
-            "Credit Card bill Payment"
+            "MOBILE RECHARGE",
+            "BILL PAYMENT",
+            "INSTANT PERSONAL LOAN",
+            "MONEY TRANSFER",
+            "INSURANCE",
+            "MUTUAL FUND",
+            "DIGITAL GOLD",
+            "EXPENSE MANAGER"
         ],
         "description": [
-            "The Bajaj Finserv Experia App is the one-stop solution for all post-loan or investment services provided by Bajaj Finserv, India’s most diversified non-banking financial company."
+            "Use MobiKwik for mobile prepaid recharge, postpaid bill payment, utility bills, electricity bill payments, water bill payment, insurance payment & DTH recharge. Transfer money from bank to bank instantly. Buy digital gold, insurance, invest in mutual funds & get instant personal loan on MobiKwik.",
+            "Book your bus, flight, train & travel tickets & save big. Track expenditure from all payment instruments and simplify your expenses."
         ],
-        "referral_code": "",
+        "referral_code": "YT9K4B",
         "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.mobikwik_new",
+        "apple_app_store_link": "https://apps.apple.com/us/app/mobikwik-recharge-bill-pay/id600002523"
     },
     {
         "name": "cred",
         "display_name": "CRED",
         "features": [
+            "Instant Loan in Covid-19 Situation",
+            "Rent pay from Credit Card",
             "Credit Card bill Payment"
         ],
         "description": [
@@ -63,8 +76,8 @@
             "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "referral_link": "https://cred.onelink.me/spQx/375c1f58",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp",
+        "apple_app_store_link": "https://apps.apple.com/us/app/cred-pay-credit-card-bills/id1428580080"
     }
 ]

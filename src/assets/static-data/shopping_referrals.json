@@ -3,28 +3,36 @@
         "name": "amazon",
         "display_name": "Amazon",
         "features": [
-            "Credit Card bill Payment",
-            "Rent pay from Credit Card",
-            "Instant Loan in Covid-19 Situation"
+            "Great Shopping Experience",
+            "Unbeatable savings on Amazon Pantry",
+            "Faster & safer payments with Amazon Pay UPI",
+            "Instant money transfers",
+            "Fast & Easy Recharges & Bill payments",
+            "Office purchases with Amazon Business",
+            "Safe and Secure Shopping",
+            "Make the most of Amazon’s exclusive benefits"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "The Amazon Shopping, UPI, Money Transfer, Bill Payment App brings to you, over 17 Crore original products, at great prices & deals. Shop on the Amazon App for the latest electronics.",
+            "Shop for your home needs and choose from selection across TVs, refrigerators, water purifiers, washing machines. Shop from Amazon Fashion for all occasions – Formal attire, casual and daily wear – shirts for men, sarees & gowns for women, watches, jewelry, shoes & footwear.",
+            "Recharge your prepaid mobile, DTH account, pay bills, book flights & movie tickets, transfer money, scan & pay at your nearby stores with Amazon Pay. Download the Amazon Shopping App for free, from Google Play Store & enjoy online shopping."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "",
+        "referral_link": "https://amzn.in/j5jTaep",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping&hl=en",
         "apple_app_store_link": ""
     },
     {
         "name": "flipkart",
         "display_name": "Flipkart",
         "features": [
-            "Credit Card bill Payment"
+            "Safe and Secure Shopping",
+            "Shop now and Paylater",
+            "Shop for Refurbished and renewed Gadgets"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "Online shopping with Flipkart is very easy as you get to shop from the comfort of your home and get products delivered at your doorstep.",
+            "By downloading the Flipkart free online shopping app on your Android phone or tablet, you can effortlessly browse our massive collection of more than 80 crore products from multiple categories including mobile phones, fashion wear, electronic devices, videos, accessories and consumer durables."
         ],
         "referral_code": "",
         "referral_link": "",
@@ -35,45 +43,76 @@
         "name": "paytm_mall",
         "display_name": "Paytm Mall",
         "features": [
-            "Credit Card bill Payment"
+            "Safe & Secure Shopping",
+            "Check Out Closely",
+            "Multiple Payment Options",
+            "Paytm Postpaid Services",
+            "User-Friendly",
+            "Order History"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "Online shopping with Paytm Mall is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep.",
+            "The super value bazaar offers an extensive range of grocery products like daily food staples, ready to cook food, high on nutrition food, beauty, make-up, personal care, health, baby care products and many more. Also take a look at the latest Automobile section that consists of cars, bikes, scooters, sports bikes, accessories, riding gear and automotive care."
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
         "apple_app_store_link": ""
     },
     {
         "name": "snapdeal",
         "display_name": "Snapdeal",
         "features": [
-            "Credit Card bill Payment"
+            "Spin to win - Prizes up-to ₹ 1,00,000",
+            "Visit daily and win - Earn one coin each day you visit",
+            "Deals of the Day"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "Snapdeal app unboxes a new world of possibilities, with fast, easy and secure online shopping. The boxes we send to our customers don't just contain orders - they contain the fuel that powers your aspirations. We love the anticipation and the delight that we see on our customer's faces when they receive a box from Snapdeal.",
+            "Find the latest offers in our online shopping app on over 85 million products. Snapdeal is India’s one of the largest online marketplace, giving you access to not just what you need, but to all that you desire.",
+            "Deals & offers get you the best price on the items you’ve been dreaming of. Download shopping app now for a great online shopping experience."
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en",
         "apple_app_store_link": ""
     },
     {
         "name": "shop_clues",
-        "display_name": "Shop Clues",
+        "display_name": "ShopClues",
         "features": [
-            "Credit Card bill Payment"
+            "Hot Deals & Offers",
+            "Search Simplified",
+            "Favorites",
+            "Secure Payment: Multiple payment options",
+            "Sharing is Easier"
         ],
         "description": [
-            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
-            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
+            "ShopClues App allows you to shop online at wholesale rate, anytime and anywhere with just a tap of your finger. You can search for desired products from more than 5 crore products across 12500 categories, sold by 5,00,000+ merchants.",
+            "The App allows the user to view order details, track orders, save multiple addresses in address book, and check product ratings and reviews by other buyers. Now you can shop for your favorite products & pay at your convenience with our secure payment options.",
+            "Download the ShopClues App to get access to awesome deals and exclusive app-only offers. Benefit from ShopClues 24x7 customer service support and comprehensive Buyer Protection program based on payment security, easy replacement and reliable merchants."
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.shopclues&hl=en",
+        "apple_app_store_link": ""
+    },
+    {
+        "name": "cashify",
+        "display_name": "Cashify",
+        "features": [
+            "Doorstep Mobile Repair",
+            "Selling Old Phones",
+            "Refurbished Mobiles, Smartphone Accessories",
+            "Finding a New Phone"
+        ],
+        "description": [
+            "Introducing the solution to all your mobile needs. Be it Selling Old Phones, Doorstep Mobile Repair, Refurbished Mobiles, Smartphone Accessories or Finding a New Phone, Cashify is the answer.",
+            "Cashify is designed to be user-friendly and help you sell used phone quickly at the best price.Browse through the simple, seamless Cashify app and enjoy all smartphone things at the click of a button."
+        ],
+        "referral_code": "VJLJKRD0",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.reglobe.cashify",
         "apple_app_store_link": ""
     }
 ]
