@@ -46,5 +46,57 @@
         "referral_link": "https://phon.pe/ru_asho2xyk2",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN",
         "apple_app_store_link": ""
+    },
+    {
+        "name": "yono_sbi",
+        "display_name": "YONO SBI",
+        "features": [
+            "India’s largest shopping marketplace",
+            "Banking simplified",
+            "One view",
+            "Smart spending",
+            "Pre-approved personal loans",
+            "Liquidity on the go",
+            "Live your dreams",
+            "Request Cheque Books",
+            "Request ATM Cards/Debit Cards",
+            "Manage and track refunds from shopping websites"
+        ],
+        "description": [
+            "YONO SBI lets you Bank, Shop,Travel,Pay Bills,Recharge,Invest, avail IRCTC ticket booking, use UPI to transfer money, book movie tickets. With SBI YONO, convenience has a new name.",
+            "YONO SBI, SBI’s latest mobile banking offering is an extension of our trusted banking legacy which gave India secure digital products such as SBI Anywhere and SBI Net Banking. YONO SBI puts India’s largest range of products and services at your fingertips. YONO SBI lets you bank digitally, invest, shop (be it groceries or from the latest fashion trends!), book movie tickets, vacations, flights and IRCTC train tickets with one single app.",
+            "YONO is supported on Android 5.0 and above."
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.sbi.lotusintouch",
+        "apple_app_store_link": ""
+    },
+    {
+        "name": "imobile",
+        "display_name": "iMobile",
+        "features": [
+            "Pay and collect money",
+            "View and transact",
+            "Check your bank balance",
+            "Loans",
+            "PPF",
+            "iWish",
+            "Insurance",
+            "Request Cheque Books",
+            "Request ATM Cards/Debit Cards",
+            "Deposits",
+            "Detailed statement",
+            "Transfer funds",
+            "Get personalized offers"
+        ],
+        "description": [
+            "iMobile is ICICI Bank’s official mobile banking application.",
+            "iMobile, the most comprehensive and secure Mobile Banking application, getting payments done through Unified Payment Interface (UPI), offers over 170 banking services on your mobile."
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.sbi.lotusintouch",
+        "apple_app_store_link": ""
     }
 ]

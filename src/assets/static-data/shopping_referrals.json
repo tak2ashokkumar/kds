@@ -36,8 +36,8 @@
         ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/flipkart/id742044692"
     },
     {
         "name": "paytm_mall",
@@ -57,7 +57,7 @@
         "referral_code": "",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/paytm-mall-online-shopping/id1157845438"
     },
     {
         "name": "snapdeal",
@@ -75,7 +75,7 @@
         "referral_code": "",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/snapdeal-online-shopping-app/id721124909"
     },
     {
         "name": "shop_clues",
@@ -92,10 +92,54 @@
             "The App allows the user to view order details, track orders, save multiple addresses in address book, and check product ratings and reviews by other buyers. Now you can shop for your favorite products & pay at your convenience with our secure payment options.",
             "Download the ShopClues App to get access to awesome deals and exclusive app-only offers. Benefit from ShopClues 24x7 customer service support and comprehensive Buyer Protection program based on payment security, easy replacement and reliable merchants."
         ],
+        "referral_code": "ASHO16018",
+        "referral_link": "http://sclu.es/C74gW",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.shopclues&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/IN/app/id994486085?mt=8"
+    },
+    {
+        "name": "quikr",
+        "display_name": "Quikr",
+        "features": [
+            "Homes",
+            "Jobs",
+            "Home Services",
+            "Cars",
+            "Bikes",
+            "Mobiles & Tablets",
+            "Electronics & Appliances",
+            "Home & Lifestyle"
+        ],
+        "description": [
+            "Quikr App is a one-stop shop for a wide range of Mobile Phones, Cars, Homes, Jobs, Local / Home Services, Bikes, Electronics, Appliances & Furniture. Experience the comfort of buying & selling with online transactions & doorstep delivery.",
+            "Install Quikr app on your smart watch which runs on Android Wear OS. You can browse various categories like mobiles, furnitures, electronics, etc and check the latest listing in your city on your smart watch."
+        ],
         "referral_code": "",
         "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.shopclues&hl=en",
-        "apple_app_store_link": ""
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.quikr&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
+    },
+    {
+        "name": "olx",
+        "display_name": "OLX",
+        "features": [
+            "GREAT SHOPPING EXPERIENCE",
+            "FAST AND CUTTING-EDGE",
+            "FUN, SIMPLE AND INTUITIVE",
+            "Mobiles",
+            "Cars and Bikes",
+            "Electronics",
+            "Real Estate",
+            "Fashion"
+        ],
+        "description": [
+            "OLX is the perfect online marketplace to buy and sell locally! No need to visit the flea market to find the best deals on pre-owned items! Here you’ll find a wide selection of like new products, from vintage clothes, antique furniture, used books, and retro games, to electronics, pre-owned cars and studios for rent!",
+            "OLX is the biggest and fastest growing app to buy and sell locally. Over 30 million downloads and 3 million listings! Here's why millions of people are buying and selling on OLX."
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.olx.southasia",
+        "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
     },
     {
         "name": "cashify",

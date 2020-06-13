@@ -16,35 +16,35 @@
         </div>
     </div>
     <div class="row mt-4" style="min-height: 70vh;" *ngIf="categoryVendors.length">
-        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 mb-4 px-2">
-            <table class="table table-responsive-sm table-hover table-outline mb-0" style="background-color: #fff;">
+        <div class="col-sm-12 col-md-7 col-lg-6 col-xl-5 mb-4 px-2">
+            <table class="table table-condensed table-outline mb-0" style="background-color: #fff;">
                 <thead class="thead-light">
                     <tr>
-                        <th>Vendor</th>
-                        <th>Referral Code / Referral Link</th>
+                        <th class="w-25">Vendor</th>
+                        <th class="w-50">Referral Code</th>
+                        <th class="w-25">Referral Code</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let vendor of categoryVendors; let i = index"
                         [ngClass]="{'table-success': vendor.name == selectedVendor.name}"
                         (click)="showVendorData(vendor)">
-                        <td class="font-weight-bold">{{vendor.display_name}}</td>
-                        <td class="d-flex align-items-center">
+                        <td class="font-weight-bold w-25">{{vendor.display_name}}</td>
+                        <td class="w-50">
                             <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
                                 <strong>{{vendor.referral_link}}</strong>
                             </a>
-                            <span *ngIf="vendor.referral_code" class="header-dark-text-color">
-                                <strong>{{vendor.referral_code}}</strong>
-                            </span>
-                            <span *ngIf="!vendor.referral_link && !vendor.referral_code">
-                                <span class="text-secondary">N/A</span>
-                            </span>
+                            <span *ngIf="!vendor.referral_link" class="text-secondary">N/A</span>
+                        </td>
+                        <td class="w-25">
+                            <span *ngIf="vendor.referral_code" class="font-weight-bold">{{vendor.referral_code}}</span>
+                            <span *ngIf="!vendor.referral_code" class="text-secondary">N/A</span>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-12 col-md-6 mb-4 col-lg-7 col-xl-8 px-2">
+        <div class="col-sm-12 col-md-5 mb-4 col-lg-6 col-xl-7 px-2">
             <ng-container *ngTemplateOutlet="referralsInfo"></ng-container>
         </div>
         <hr>
@@ -69,13 +69,13 @@
         <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.display_name}}</div>
         <div class="w-55">
             <div class="d-flex align-items-center pull-right">
-                <a class=""> Download from : &nbsp;&nbsp;</a>
+                <a class=""> Get it from : &nbsp;&nbsp;</a>
                 <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.apple_app_store_link"
-                [href]="selectedVendor.apple_app_store_link" target="_blank">
+                    [href]="selectedVendor.apple_app_store_link" target="_blank">
                     <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
                 </a>
                 <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.google_play_store_link"
-                [href]="selectedVendor.google_play_store_link" target="_blank">
+                    [href]="selectedVendor.google_play_store_link" target="_blank">
                     <i class="c-icon c-icon-xl cib-google-play"></i>
                 </a>
             </div>

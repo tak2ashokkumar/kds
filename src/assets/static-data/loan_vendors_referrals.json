@@ -59,6 +59,27 @@
         "apple_app_store_link": ""
     },
     {
+        "name": "rupeek",
+        "display_name": "Rupeek",
+        "features": [
+            "Lowest interest rate",
+            "Highest Per-Gram Rate",
+            "Free 30 Minutes Doorstep Service",
+            "Customized Gold Loan Solutions",
+            "Easy Payments on the App",
+            "Gold Delivered Back At Your Doorstep"
+        ],
+        "description": [
+            "Avail online gold loan with a trusted gold loan company from the comfort of your home. With over 1 lakh happy customers and the lowest interest rates in the market at 0.89% per month, we fulfil our promise of No Tension Gold Loans so that you are always in control of your finances! Our lending partners include top banks such as ICICI Bank, Federal Bank and Karur Vysya Bank.",
+            "It is a Gold loan company that offers the lowest gold loan interest rate with the highest per gram rate guarantee! We have over 1,00,000+ happy customers across 20000 locations in 11 cities including Bangalore, Delhi, Chennai, Hyderabad, Mumbai, Pune, Kolkata, Ahmedabad, Jaipur, Surat as well as Coimbatore and we are expanding fast across India.",
+            "This online gold loan company offers features like free 30-minutes Doorstep service, No Hidden Charges, and customized gold loan solutions."
+        ],
+        "referral_code": "KOMA882",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.rupeek.customer",
+        "apple_app_store_link": ""
+    },
+    {
         "name": "mobikwik",
         "display_name": "Mibikwik",
         "features": [
