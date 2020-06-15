@@ -185,28 +185,5 @@
         "referral_link": "http://u.airtel.in/RKW3KA",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.myairtelapp",
         "apple_app_store_link": "https://apps.apple.com/us/app/airtel-thanks-recharge-bank/id543184334"
-    },
-    {
-        "name": "jio",
-        "display_name": "Jio",
-        "features": [
-            "Universal QR",
-            "Recharges",
-            "Quick Access to Jio Apps",
-            "JioPay",
-            "JioCare",
-            "JioSaavn",
-            "JioCinema",
-            "JioEngage",
-            "JioCloud",
-            "Digital Assistant"
-        ],
-        "description": [
-            "MyJio is a combination of different services from app. Now manage your Jio accounts, services and much more with the new MyJio."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.jio.myjio",
-        "apple_app_store_link": ""
     }
 ]

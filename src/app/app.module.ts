@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AppMainComponent } from './app-main/app-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
-import { AppCoreModuleModule } from './app-core-module/app-core-module.module';
+import { AppCoreModule } from './app-core/app-core.module'
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { AppCoreModuleModule } from './app-core-module/app-core-module.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppCoreModuleModule,
+    AppCoreModule,
     AppRoutingModule,
     HttpClientModule,
   ],

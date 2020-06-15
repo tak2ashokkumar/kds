@@ -5,23 +5,30 @@ import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 
 
 const routes: Routes = [
-  { 
-    path: 'default', 
-    component: AppMainComponent
+  { path: 'default', component: AppMainComponent },
+  {
+    path: 'promotions',
+    loadChildren: () => import(`./app-promotions/app-promotions.module`).then(m => m.AppPromotionsModule)
   },
-  { 
-    path: 'promotions', 
-    loadChildren: () => import(`./app-promotions/app-promotions.module`).then(m => m.AppPromotionsModule) 
+  {
+    path: 'referrals',
+    loadChildren: () => import('./referral-codes/referral-codes.module').then(m => m.ReferralCodesModule)
   },
-  { 
-    path: '', 
-    redirectTo: 'promotions', 
-    pathMatch: 'full' 
+  // {
+  //   path: '',
+  //   redirectTo: 'promotions',
+  //   pathMatch: 'full'
+  // },
+  {
+    path: '',
+    redirectTo: 'referrals',
+    pathMatch: 'full'
   },
-  // { 
-  //   path: '', 
-  //   component: InvalidRouteComponent, 
-  // }
+  {
+    path: '404',
+    component: InvalidRouteComponent,
+  },
+  { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

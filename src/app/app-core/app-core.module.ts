@@ -33,4 +33,4 @@ import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
     RxReactiveFormsModule,
   ],
 })
-export class AppCoreModuleModule { }
+export class AppCoreModule { }

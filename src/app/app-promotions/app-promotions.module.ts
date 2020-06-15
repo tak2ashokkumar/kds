@@ -4,18 +4,18 @@ import { AppPromotionsRoutingModule } from './app-promotions-routing.module';
 import { AppPromotionsComponent } from './app-promotions.component';
 import { AppHeaderComponent } from '../app-header/app-header.component';
 import { ReferralCodesComponent } from './referral-codes/referral-codes.component';
-import { AppCoreModuleModule } from '../app-core-module/app-core-module.module';
+import { AppCoreModule } from '../app-core/app-core.module';
 
 
 @NgModule({
   declarations: [
-    AppHeaderComponent,
+    // AppHeaderComponent,
     AppPromotionsComponent,
-    ReferralCodesComponent,
+    ReferralCodesComponent
   ],
   imports: [
-    AppCoreModuleModule,
-    AppPromotionsRoutingModule,
+    AppCoreModule,
+    AppPromotionsRoutingModule
   ]
 })
 export class AppPromotionsModule { }
