@@ -11,8 +11,8 @@ const routes: Routes = [
     loadChildren: () => import(`./app-promotions/app-promotions.module`).then(m => m.AppPromotionsModule)
   },
   {
-    path: 'referrals',
-    loadChildren: () => import('./referral-codes/referral-codes.module').then(m => m.ReferralCodesModule)
+    path: 'referral-codes',
+    loadChildren: () => import('./app-referrals/app-referrals.module').then(m => m.AppReferralsModule)
   },
   // {
   //   path: '',
@@ -21,7 +21,7 @@ const routes: Routes = [
   // },
   {
     path: '',
-    redirectTo: 'referrals',
+    redirectTo: 'referral-codes',
     pathMatch: 'full'
   },
   {

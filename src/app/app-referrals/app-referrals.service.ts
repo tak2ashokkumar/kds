@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { GET_REFERRALS_DATA } from '../promotion-endpoints-const';
 import { Observable } from 'rxjs';
+import { GET_REFERRALS_DATA } from './app-referrals-endpoint-const';
 
 @Injectable()
-export class ReferralCodesService {
+export class AppReferralsService {
 
   constructor(private http: HttpClient) { }
 
@@ -12,10 +12,9 @@ export class ReferralCodesService {
     return applicationCategories;
   }
 
-  getCategoryVendors(selectedAppCategory: ApplicationCategory): Observable<VendorDescriptionData[]> {
-    return this.http.get<VendorDescriptionData[]>(GET_REFERRALS_DATA(selectedAppCategory.name));
+  getCategoryVendors(selectedAppCategory: string): Observable<VendorDescriptionData[]> {
+    return this.http.get<VendorDescriptionData[]>(GET_REFERRALS_DATA(selectedAppCategory));
   }
-
 }
 
 export class VendorDescriptionData {

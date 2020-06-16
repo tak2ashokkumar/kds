@@ -1,0 +1,73 @@
+<div class="row mt-4" style="min-height: 70vh;" *ngIf="categoryVendors.length">
+    <div class="col-sm-12 col-md-7 col-lg-6 col-xl-5 mb-4 px-2">
+        <table class="table table-condensed table-outline mb-0" style="background-color: #fff;">
+            <thead class="thead-light">
+                <tr>
+                    <th class="w-25">Vendor</th>
+                    <th class="w-25">Referral Code</th>
+                    <th class="w-50">Referral Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let vendor of categoryVendors; let i = index"
+                    [ngClass]="{'table-success': vendor.name == selectedVendor.name}" (click)="showVendorData(vendor)">
+                    <td class="font-weight-bold w-25">{{vendor.display_name}}</td>
+                    <td class="w-25">
+                        <span *ngIf="vendor.referral_code" class="font-weight-bold">{{vendor.referral_code}}</span>
+                        <span *ngIf="!vendor.referral_code" class="text-secondary">N/A</span>
+                    </td>
+                    <td class="w-50">
+                        <a *ngIf="vendor.referral_link" [href]="vendor.referral_link" target="_blank">
+                            <strong>{{vendor.referral_link}}</strong>
+                        </a>
+                        <span *ngIf="!vendor.referral_link" class="text-secondary">N/A</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-12 col-md-5 mb-4 col-lg-6 col-xl-7 px-2">
+        <ng-container *ngTemplateOutlet="referralsInfo"></ng-container>
+    </div>
+    <hr>
+</div>
+<ng-template #referralsInfo>
+    <div class="card alert-success-card" style="height:100%">
+        <ng-container *ngTemplateOutlet="referralsInfoHeader"></ng-container>
+        <div class="card-body">
+            <p class="font-weight-normal" *ngFor="let desc of selectedVendor.description">
+                {{desc}}
+            </p>
+            <hr>
+            <ng-container *ngTemplateOutlet="appFeatures"></ng-container>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #referralsInfoHeader>
+    <div class="card-header alert-success-card-header d-flex align-items-center px-2 py-2">
+        <div class="w-45 h4 mb-0 font-weight-bold">{{selectedVendor.display_name}}</div>
+        <div class="w-55">
+            <div class="d-flex align-items-center pull-right">
+                <a class=""> Get it from : &nbsp;&nbsp;</a>
+                <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.apple_app_store_link"
+                    [href]="selectedVendor.apple_app_store_link" target="_blank">
+                    <i class="c-icon c-icon-xl mr-3 cib-apple"></i>
+                </a>
+                <a class="mr-1 font-weight-bold" [class.disabled]="!selectedVendor.google_play_store_link"
+                    [href]="selectedVendor.google_play_store_link" target="_blank">
+                    <i class="c-icon c-icon-xl cib-google-play"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #appFeatures>
+    <p class="my-2">
+        <span class="badge badge-pill bg-header-dark text-white mr-2 my-2 p-2"
+            *ngFor="let feature of selectedVendor.features">
+            <span class="text-uppercase">{{feature}}</span>
+        </span>
+    </p>
+</ng-template>
