@@ -38,8 +38,8 @@ export class AppReferralsComponent implements OnInit, OnDestroy {
 
   getRelatedVendors(view: ApplicationCategory) {
     this.selectedAppCategory = view;
-    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() =>{
-      this.router.navigate([view.name], { relativeTo: this.route });
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([view.name, view.defaultApp], { relativeTo: this.route });
     });
   }
 

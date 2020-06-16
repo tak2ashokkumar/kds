@@ -14,11 +14,6 @@ const routes: Routes = [
     path: 'referral-codes',
     loadChildren: () => import('./app-referrals/app-referrals.module').then(m => m.AppReferralsModule)
   },
-  // {
-  //   path: '',
-  //   redirectTo: 'promotions',
-  //   pathMatch: 'full'
-  // },
   {
     path: '',
     redirectTo: 'referral-codes',
@@ -28,7 +23,7 @@ const routes: Routes = [
     path: '404',
     component: InvalidRouteComponent,
   },
-  { path: '**', redirectTo: '404' }
+  // { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

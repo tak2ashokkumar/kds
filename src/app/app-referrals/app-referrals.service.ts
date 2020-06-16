@@ -32,33 +32,33 @@ export class VendorDescriptionData {
 export class ApplicationCategory {
   displayName: string;
   name: string;
-  vendors: number;
+  defaultApp: string;
 }
 
 export const applicationCategories: ApplicationCategory[] = [
   {
     displayName: 'Bill Payments',
     name: 'bill_payments',
-    vendors: 10,
+    defaultApp: 'cred',
   },
   {
     displayName: 'Loan Providers',
     name: 'loan_providers',
-    vendors: 5,
+    defaultApp: 'credy',
   },
   {
     displayName: 'Banking Apps',
     name: 'banking',
-    vendors: 2,
+    defaultApp: 'google_pay',
   },
   {
     displayName: 'Shopping Vendors',
     name: 'shopping_vendors',
-    vendors: 6,
+    defaultApp: 'amazon',
   },
   {
     displayName: 'Utilities',
     name: 'utilities',
-    vendors: 4,
+    defaultApp: 'truecaller',
   }
 ]

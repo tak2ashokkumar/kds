@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: '', component: AppReferralsComponent,
     children: [
-      { path: ':appCategory', component: ReferralAppDataComponent }
+      { path: ':appCategory/:app', component: ReferralAppDataComponent }
     ]
   }
 ];
