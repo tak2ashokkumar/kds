@@ -23,61 +23,6 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "flipkart",
-        "display_name": "Flipkart",
-        "features": [
-            "Safe and Secure Shopping",
-            "Shop now and Paylater",
-            "Shop for Refurbished and renewed Gadgets"
-        ],
-        "description": [
-            "Online shopping with Flipkart is very easy as you get to shop from the comfort of your home and get products delivered at your doorstep.",
-            "By downloading the Flipkart free online shopping app on your Android phone or tablet, you can effortlessly browse our massive collection of more than 80 crore products from multiple categories including mobile phones, fashion wear, electronic devices, videos, accessories and consumer durables."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
-        "apple_app_store_link": "https://apps.apple.com/in/app/flipkart/id742044692"
-    },
-    {
-        "name": "paytm_mall",
-        "display_name": "Paytm Mall",
-        "features": [
-            "Safe & Secure Shopping",
-            "Check Out Closely",
-            "Multiple Payment Options",
-            "Paytm Postpaid Services",
-            "User-Friendly",
-            "Order History"
-        ],
-        "description": [
-            "Online shopping with Paytm Mall is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep.",
-            "The super value bazaar offers an extensive range of grocery products like daily food staples, ready to cook food, high on nutrition food, beauty, make-up, personal care, health, baby care products and many more. Also take a look at the latest Automobile section that consists of cars, bikes, scooters, sports bikes, accessories, riding gear and automotive care."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
-        "apple_app_store_link": "https://apps.apple.com/in/app/paytm-mall-online-shopping/id1157845438"
-    },
-    {
-        "name": "snapdeal",
-        "display_name": "Snapdeal",
-        "features": [
-            "Spin to win - Prizes up-to ₹ 1,00,000",
-            "Visit daily and win - Earn one coin each day you visit",
-            "Deals of the Day"
-        ],
-        "description": [
-            "Snapdeal app unboxes a new world of possibilities, with fast, easy and secure online shopping. The boxes we send to our customers don't just contain orders - they contain the fuel that powers your aspirations. We love the anticipation and the delight that we see on our customer's faces when they receive a box from Snapdeal.",
-            "Find the latest offers in our online shopping app on over 85 million products. Snapdeal is India’s one of the largest online marketplace, giving you access to not just what you need, but to all that you desire.",
-            "Deals & offers get you the best price on the items you’ve been dreaming of. Download shopping app now for a great online shopping experience."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en",
-        "apple_app_store_link": "https://apps.apple.com/in/app/snapdeal-online-shopping-app/id721124909"
-    },
-    {
         "name": "shop_clues",
         "display_name": "ShopClues",
         "features": [
@@ -114,7 +59,7 @@
             "Quikr App is a one-stop shop for a wide range of Mobile Phones, Cars, Homes, Jobs, Local / Home Services, Bikes, Electronics, Appliances & Furniture. Experience the comfort of buying & selling with online transactions & doorstep delivery.",
             "Install Quikr app on your smart watch which runs on Android Wear OS. You can browse various categories like mobiles, furnitures, electronics, etc and check the latest listing in your city on your smart watch."
         ],
-        "referral_code": "",
+        "referral_code": "YAHH73KN",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.quikr&hl=en_IN",
         "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
@@ -136,8 +81,8 @@
             "OLX is the perfect online marketplace to buy and sell locally! No need to visit the flea market to find the best deals on pre-owned items! Here you’ll find a wide selection of like new products, from vintage clothes, antique furniture, used books, and retro games, to electronics, pre-owned cars and studios for rent!",
             "OLX is the biggest and fastest growing app to buy and sell locally. Over 30 million downloads and 3 million listings! Here's why millions of people are buying and selling on OLX."
         ],
-        "referral_code": "",
-        "referral_link": "",
+        "referral_code": "157889527",
+        "referral_link": "www.olx.in/share/?os=android&ref=157889527",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.olx.southasia",
         "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
     },
@@ -158,5 +103,23 @@
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.reglobe.cashify",
         "apple_app_store_link": ""
+    },
+    {
+        "name": "snapdeal",
+        "display_name": "Snapdeal",
+        "features": [
+            "Spin to win - Prizes up-to ₹ 1,00,000",
+            "Visit daily and win - Earn one coin each day you visit",
+            "Deals of the Day"
+        ],
+        "description": [
+            "Snapdeal app unboxes a new world of possibilities, with fast, easy and secure online shopping. The boxes we send to our customers don't just contain orders - they contain the fuel that powers your aspirations. We love the anticipation and the delight that we see on our customer's faces when they receive a box from Snapdeal.",
+            "Find the latest offers in our online shopping app on over 85 million products. Snapdeal is India’s one of the largest online marketplace, giving you access to not just what you need, but to all that you desire.",
+            "Deals & offers get you the best price on the items you’ve been dreaming of. Download shopping app now for a great online shopping experience."
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/snapdeal-online-shopping-app/id721124909"
     }
 ]

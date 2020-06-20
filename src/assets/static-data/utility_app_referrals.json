@@ -129,25 +129,6 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "tiktok",
-        "display_name": "TikTok",
-        "features": [
-            "Watch millions of videos selected specifically for you",
-            "Daily Dose of Trending Videos & Posts",
-            "Get entertained and inspired by a global community of creators",
-            "Multiple INDIAN LANGUAGES",
-            "Download Unlimited Videos & Shayaris"
-        ],
-        "description": [
-            "TikTok is not your ordinary destination for short-form mobile video. It's raw, real, and without boundaries—whether you're brushing your teeth at 7:45 a.m. or you're making breakfast at 7:45 p.m.",
-            "It's from the gut, 'come as you are' storytelling told in 15 seconds. With TikTok life's more fun when you live in the moment and go beyond to explore."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go",
-        "apple_app_store_link": ""
-    },
-    {
         "name": "zee5",
         "display_name": "ZEE5",
         "features": [
@@ -195,26 +176,6 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "snapchat",
-        "display_name": "Snapchat",
-        "features": [
-            "SNAP",
-            "CHAT",
-            "DISCOVER",
-            "SNAP MAP",
-            "MEMORIES",
-            "FRIENDSHIP PROFILE"
-        ],
-        "description": [
-            "Snapchat is a fast and fun way to share the moment with friends and family 👻",
-            "Snapchat opens right to the camera, so you can send a Snap in seconds! Just take a photo or video, add a caption, and send it to your best friends and family. Express yourself with Filters, Lenses, Bitmojis, and all kinds of fun effects."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.snapchat.android",
-        "apple_app_store_link": ""
-    },
-    {
         "name": "paisawapas",
         "display_name": "PaisaWapas",
         "features": [
@@ -234,25 +195,6 @@
         "referral_code": "5FSFX",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.paisawapas.app",
-        "apple_app_store_link": ""
-    },
-    {
-        "name": "helo",
-        "display_name": "Helo",
-        "features": [
-            "Create Content in Multiple Indian Languages",
-            "Daily Dose of Trending Videos & Posts",
-            "Features That Set Helo Apart",
-            "Multiple INDIAN LANGUAGES",
-            "Download Unlimited Videos & Shayaris"
-        ],
-        "description": [
-            "Helo is India's leading social media platform with 🔥 50,000,000+ users",
-            "Download Helo today and start creating, reading, watching, sharing and discussing with others!"
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=app.buzz.share",
         "apple_app_store_link": ""
     },
     {
@@ -309,6 +251,25 @@
         "referral_code": "g25gbwn",
         "referral_link": "https://8dws.app.link/ukIngvNN4S",
         "google_play_store_link": "https://storage.googleapis.com/zupee-cdn/apk/Zupee.apk",
+        "apple_app_store_link": ""
+    },
+    {
+        "name": "helo",
+        "display_name": "Helo",
+        "features": [
+            "Create Content in Multiple Indian Languages",
+            "Daily Dose of Trending Videos & Posts",
+            "Features That Set Helo Apart",
+            "Multiple INDIAN LANGUAGES",
+            "Download Unlimited Videos & Shayaris"
+        ],
+        "description": [
+            "Helo is India's leading social media platform with 🔥 50,000,000+ users",
+            "Download Helo today and start creating, reading, watching, sharing and discussing with others!"
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=app.buzz.share",
         "apple_app_store_link": ""
     }
 ]

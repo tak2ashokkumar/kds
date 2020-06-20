@@ -17,30 +17,6 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "bajaj_finserv",
-        "display_name": "Bajaj Finserv",
-        "features": [
-            "Personal Loan",
-            "Home Loan Balance Transfer ",
-            "Business Loan",
-            "Doctor Loan",
-            "Fixed Deposits + FD Calculator",
-            "Insurance products",
-            "Loan Against property",
-            "Chartered Accountant Loan",
-            "RBL- Bajaj Finserv Credit Card",
-            "EMI Card"
-        ],
-        "description": [
-            "The Bajaj Finserv Experia App is the one-stop solution for all post-loan or investment services provided by Bajaj Finserv, India’s most diversified non-banking financial company.",
-            "New users can also check their preapproved limit assigned for the following products, you just need to login using your mobile number and authenticate using OTP received."
-        ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&hl=en",
-        "apple_app_store_link": ""
-    },
-    {
         "name": "early_salary",
         "display_name": "Early Salary",
         "features": [
@@ -117,5 +93,29 @@
         "referral_link": "https://cred.onelink.me/spQx/375c1f58",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp",
         "apple_app_store_link": "https://apps.apple.com/us/app/cred-pay-credit-card-bills/id1428580080"
+    },
+    {
+        "name": "bajaj_finserv",
+        "display_name": "Bajaj Finserv",
+        "features": [
+            "Personal Loan",
+            "Home Loan Balance Transfer ",
+            "Business Loan",
+            "Doctor Loan",
+            "Fixed Deposits + FD Calculator",
+            "Insurance products",
+            "Loan Against property",
+            "Chartered Accountant Loan",
+            "RBL- Bajaj Finserv Credit Card",
+            "EMI Card"
+        ],
+        "description": [
+            "The Bajaj Finserv Experia App is the one-stop solution for all post-loan or investment services provided by Bajaj Finserv, India’s most diversified non-banking financial company.",
+            "New users can also check their preapproved limit assigned for the following products, you just need to login using your mobile number and authenticate using OTP received."
+        ],
+        "referral_code": "",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&hl=en",
+        "apple_app_store_link": ""
     }
 ]
