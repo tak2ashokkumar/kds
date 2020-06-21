@@ -9,11 +9,13 @@ import { AppMainComponent } from './app-main/app-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 import { AppCoreModule } from './app-core/app-core.module'
+import { AppHeaderComponent } from './app-header/app-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppMainComponent,
+    AppHeaderComponent,
     InvalidRouteComponent
   ],
   imports: [

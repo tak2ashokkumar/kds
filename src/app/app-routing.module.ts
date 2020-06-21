@@ -7,8 +7,8 @@ import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 const routes: Routes = [
   { path: 'default', component: AppMainComponent },
   {
-    path: 'promotions',
-    loadChildren: () => import(`./app-promotions/app-promotions.module`).then(m => m.AppPromotionsModule)
+    path: 'utils',
+    loadChildren: () => import(`./utilities/utilities.module`).then(m => m.UtilitiesModule)
   },
   {
     path: 'referral-codes',
