@@ -45,6 +45,7 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
       }
       console.log('this.selectedApplication : ', this.selectedApplication);
       this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+        console.log('this.selectedApplicationData : ', this.selectedApplicationData);
         if (this.selectedApplicationData) {
           this.router.navigate([this.selectedApplicationData], { relativeTo: this.route });
         } else {
@@ -59,15 +60,11 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
     }
   }
 
-  getApplicationRelatedData(view: AppData) {
+  loadApplication(view: AppData) {
     this.selectedApplication = view;
     this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-      this.router.navigate([view.name, view.defaultApp], { relativeTo: this.route });
+      this.router.navigate([view.name, view.defaultApp], { relativeTo: this.route.parent });
     });
   }
-
-  // showVendorData(view: VendorDescriptionData) {
-  //   this.selectedVendor = view;
-  // }
 
 }

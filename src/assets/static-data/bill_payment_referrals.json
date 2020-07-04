@@ -77,7 +77,7 @@
         "referral_code": "",
         "referral_link": "https://amzn.in/j5jTaep",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/us/app/amazon-shopping-made-easy/id297606951"
     },
     {
         "name": "payzap",
@@ -96,7 +96,7 @@
         "referral_code": "tak2ashok",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.enstage.wibmo.hdfc",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/payzapp-recharge-pay-bill/id1030991787"
     },
     {
         "name": "true_balance",
@@ -122,47 +122,52 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "free_charge",
-        "display_name": "Free Charge",
+        "name": "google_pay",
+        "display_name": "Google Pay (Tez)",
         "features": [
-            "Mobile Recharges",
-            "Bill Payments",
-            "UPI Payments",
-            "Mutual Funds",
-            "Cashless Payments",
-            "QR Code Feature",
-            "Deals",
-            "Cashbacks and Discounts"
+            "Conveniently pay bills",
+            "Recharge your prepaid mobile",
+            "Buy and sell 24K Gold",
+            "Book IRCTC train tickets",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Pay and receive money directly from bank account",
+            "Multiple layers of security from bank, UPI, and Google",
+            "Pay anyone. Even those without Google Pay",
+            "Get rewarded for money transfers"
         ],
         "description": [
-            "Recharge your mobile, pay bills, send and receive money through UPI, create BHIM UPI ID & link bank account for instant money transfer, invest in Mutual Funds, make investments with SIPs.",
-            "Buy Deals from your favourite brands starting at ₹1, pay with Freecharge across categories like movies, entertainment, food, shopping, travel and get cashbacks and discounts. Get Gift Cards, Personal Loans, Debit Card EMI, Digital Credit Card and much more."
+            "Send money to friends, pay bills and buy online, recharge your phone, or pay at the nearby café with Google Pay, a simple and secure payments app by Google.",
+            "The chaiwala nearby, neighbourhood kirana, and even your favorite salon can now accept payments on the spot with Tez Mode, all while keeping your personal and bank details private."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.freecharge.android",
-        "apple_app_store_link": "https://apps.apple.com/us/app/recharge-mobile-dth-online/id877495926"
+        "referral_link": "https://g.co/payinvite/E21yd",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/google-pay-for-india-tez/id1193357041"
     },
     {
-        "name": "oxigen_wallet",
-        "display_name": "Oxigen Wallet",
+        "name": "phonepe",
+        "display_name": "PhonePe",
         "features": [
-            "ePaylater",
-            "Bill Payments",
-            "Pay at Store",
-            "Transfer to Bank",
-            "Wallet to Wallet Money Transfer",
-            "Shop Online",
-            "Gift Cards"
+            "Pay Credit Card Bills",
+            "Buy and Sell Gold",
+            "Buy PhonePe Gift Cards",
+            "Invest in Tax saving funds",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Transfer money with BHIM UPI",
+            "Recharge your mobile and DTH connection",
+            "Use your favourite Apps on PhonePe Switch",
+            "Manage and track refunds from shopping websites"
         ],
         "description": [
-            "Oxigen Wallet brought to you by the house of Oxigen, India’s leading payment solutions provider, is the one stop shop for all your payment needs.",
-            "Get ready to be bowled over by the sheer ease of using Oxigen Wallet to make cashless payments."
+            "PhonePe is a payments app that allows you to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, pay all your utility bills and also make instant payments at your favourite offline and online stores.",
+            "Link your bank account on the PhonePe app and transfer money with BHIM UPI instantly. The PhonePe app is safe and secure, meets all your payment and banking needs, and is much better than Internet banking. No need to remember IFSC codes, account numbers, or other details. Make instant bank transfers with BHIM UPI by just using a mobile number or a unique payment identity – your Virtual Payment Address (VPA)."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.oxigen.oxigenwallet",
-        "apple_app_store_link": ""
+        "referral_link": "https://phon.pe/ru_asho2xyk2",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/phonepe-indias-payments-app/id1170055821"
     },
     {
         "name": "airtel",

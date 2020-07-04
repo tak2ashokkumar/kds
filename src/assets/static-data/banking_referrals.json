@@ -21,7 +21,7 @@
         "referral_code": "",
         "referral_link": "https://g.co/payinvite/E21yd",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/google-pay-for-india-tez/id1193357041"
     },
     {
         "name": "phonepe",
@@ -45,58 +45,148 @@
         "referral_code": "",
         "referral_link": "https://phon.pe/ru_asho2xyk2",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/phonepe-indias-payments-app/id1170055821"
+    },
+    {
+        "name": "credy",
+        "display_name": "Credy",
+        "features": [
+            "Interest rate - Typically 1-1.5% of Loan Amount Per Month",
+            "Period of repayment - 3 months - 15 months",
+            "Maximum interest rate (annualized, on reducing principal): 30%"
+        ],
+        "description": [
+            "Credy offers a fast and hassle-free instant personal loans online with an easy paperless process & reliable customer service. From your kid's school education to medical emergencies to refinancing credit card bill - we provide instant loans for all your life needs. Get instant loan approval for your personal loan from Rs 10,000 up to Rs 1 lakh.",
+            "Use our mobile app to track your loan application, repayments and to apply for top-up loans or to repay existing loans. Download the Credy personal loan app now!"
+        ],
+        "referral_code": "AS695723",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=in.credy.borrowerapp.full&hl=en",
         "apple_app_store_link": ""
     },
     {
-        "name": "yono_sbi",
-        "display_name": "YONO SBI",
+        "name": "early_salary",
+        "display_name": "Early Salary",
         "features": [
-            "India’s largest shopping marketplace",
-            "Banking simplified",
-            "One view",
-            "Smart spending",
-            "Pre-approved personal loans",
-            "Liquidity on the go",
-            "Live your dreams",
-            "Request Cheque Books",
-            "Request ATM Cards/Debit Cards",
-            "Manage and track refunds from shopping websites"
+            "Advance salary loans at 24%-30% p.a. translating to 2% - 2.5% a month",
+            "Lowest processing fees ranging between 0% - 4% of the loan amount",
+            "Instant loan up to ₹ 2 lakh"
         ],
         "description": [
-            "YONO SBI lets you Bank, Shop,Travel,Pay Bills,Recharge,Invest, avail IRCTC ticket booking, use UPI to transfer money, book movie tickets. With SBI YONO, convenience has a new name.",
-            "YONO SBI, SBI’s latest mobile banking offering is an extension of our trusted banking legacy which gave India secure digital products such as SBI Anywhere and SBI Net Banking. YONO SBI puts India’s largest range of products and services at your fingertips. YONO SBI lets you bank digitally, invest, shop (be it groceries or from the latest fashion trends!), book movie tickets, vacations, flights and IRCTC train tickets with one single app.",
-            "YONO is supported on Android 5.0 and above."
+            "EarlySalary is an Instant Salary Advance Loan App & Personal Loan App.Avail an instant personal loan ranging from ₹ 8,000 to ₹ 2 Lakh on the app and we will transfer cash to your bank account in just 10 minutes.",
+            "No credit history required, no prepayment charges and very low-interest rates!",
+            "First-time instant loan & personal loan applicants we’ve got your back too! EarlySalary makes use of a proprietary algorithm and formulates a ‘SocialWorth’ score (SW score) to provide the best experience to users in need of instant personal loans. All salaried individuals with a salary of Rs.18,000 & above can avail an instant cash loan by downloading the EarlySalary App now!"
         ],
         "referral_code": "",
+        "referral_link": "http://bit.ly/2YNd93e",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.earlysalary.android&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/earlysalary-instant-loan/id1094602630"
+    },
+    {
+        "name": "rupeek",
+        "display_name": "Rupeek",
+        "features": [
+            "Lowest interest rate",
+            "Highest Per-Gram Rate",
+            "Free 30 Minutes Doorstep Service",
+            "Customized Gold Loan Solutions",
+            "Easy Payments on the App",
+            "Gold Delivered Back At Your Doorstep"
+        ],
+        "description": [
+            "Avail online gold loan with a trusted gold loan company from the comfort of your home. With over 1 lakh happy customers and the lowest interest rates in the market at 0.89% per month, we fulfil our promise of No Tension Gold Loans so that you are always in control of your finances! Our lending partners include top banks such as ICICI Bank, Federal Bank and Karur Vysya Bank.",
+            "It is a Gold loan company that offers the lowest gold loan interest rate with the highest per gram rate guarantee! We have over 1,00,000+ happy customers across 20000 locations in 11 cities including Bangalore, Delhi, Chennai, Hyderabad, Mumbai, Pune, Kolkata, Ahmedabad, Jaipur, Surat as well as Coimbatore and we are expanding fast across India.",
+            "This online gold loan company offers features like free 30-minutes Doorstep service, No Hidden Charges, and customized gold loan solutions."
+        ],
+        "referral_code": "KOMA882",
         "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.sbi.lotusintouch",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.rupeek.customer",
         "apple_app_store_link": ""
     },
     {
-        "name": "imobile",
-        "display_name": "iMobile",
+        "name": "mobikwik",
+        "display_name": "Mibikwik",
         "features": [
-            "Pay and collect money",
-            "View and transact",
-            "Check your bank balance",
-            "Loans",
-            "PPF",
-            "iWish",
-            "Insurance",
-            "Request Cheque Books",
-            "Request ATM Cards/Debit Cards",
-            "Deposits",
-            "Detailed statement",
-            "Transfer funds",
-            "Get personalized offers"
+            "MOBILE RECHARGE",
+            "BILL PAYMENT",
+            "INSTANT PERSONAL LOAN",
+            "MONEY TRANSFER",
+            "INSURANCE",
+            "MUTUAL FUND",
+            "DIGITAL GOLD",
+            "EXPENSE MANAGER"
         ],
         "description": [
-            "iMobile is ICICI Bank’s official mobile banking application.",
-            "iMobile, the most comprehensive and secure Mobile Banking application, getting payments done through Unified Payment Interface (UPI), offers over 170 banking services on your mobile."
+            "Use MobiKwik for mobile prepaid recharge, postpaid bill payment, utility bills, electricity bill payments, water bill payment, insurance payment & DTH recharge. Transfer money from bank to bank instantly. Buy digital gold, insurance, invest in mutual funds & get instant personal loan on MobiKwik.",
+            "Book your bus, flight, train & travel tickets & save big. Track expenditure from all payment instruments and simplify your expenses."
+        ],
+        "referral_code": "YT9K4B",
+        "referral_link": "",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.mobikwik_new",
+        "apple_app_store_link": "https://apps.apple.com/us/app/mobikwik-recharge-bill-pay/id600002523"
+    },
+    {
+        "name": "cred",
+        "display_name": "CRED",
+        "features": [
+            "Instant Loan in Covid-19 Situation",
+            "Rent pay from Credit Card",
+            "Credit Card bill Payment"
+        ],
+        "description": [
+            "CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.",
+            "Every time you pay your credit card bill on CRED, you earn CRED coins equivalent to the amount of your credit card bill cleared on CRED. The CRED coins earned can be used to claim shopping rewards, travel rewards and dining rewards."
         ],
         "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.sbi.lotusintouch",
+        "referral_link": "https://cred.onelink.me/spQx/375c1f58",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp",
+        "apple_app_store_link": "https://apps.apple.com/us/app/cred-pay-credit-card-bills/id1428580080"
+    },
+    {
+        "name": "paisabazar",
+        "display_name": "Paisa Bazar",
+        "features": [
+            "Free Credit Report from CIBIL, Experian & CRIF Highmark",
+            "Personal loan offers from top banks and NBFCs",
+            "50+ Credit Card options from top providers",
+            "Business loan offers",
+            "Home loan options",
+            "Mutual fund investments",
+            "Loan Against property",
+            "EMI Calculators for different kinds of loans",
+            "Credit Score Assistance",
+            "Tax solutions",
+            "Banking & other related information",
+            "Financial guidance through experts",
+            "PB Tracker",
+            "Fixed Deposit",
+            "Digital Gold",
+            "Savings Account"
+        ],
+        "description": [
+            "Paisabazaar is a one stop digital lending marketplace that offers Free Credit Report, personal loan, credit cards, business loan, home loans, mutual funds and many other financial services at one place.",
+            "Apart from being featured by various prominent media houses on regular basis, Paisabazaar has been awarded Best Financial Services award by Economic Times and has been recognized as the Best Emerging Brand by Indian Brand Convention and the CMO Asia Awards."
+        ],
+        "referral_code": "qeYQwgPXv7",
+        "referral_link": "https://paisabazaar.app.link/qeYQwgPXv7",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.paisabazaar&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/paisabazaar-com-loans-cards/id1029403201"
+    },
+    {
+        "name": "credit_mantri",
+        "display_name": "CreditMantri",
+        "features": [
+            "Credit Score and Analysis",
+            "Track Spends and Bills",
+            "Loans and Card offers",
+            "Check bank balance and ATM 🏧 withdrawal count"
+        ],
+        "description": [
+            "CreditMantri’s credit score is powered by Equifax - 1 of the 4 credit bureaus authorized by RBI. CreditMantri is trusted by more than 18 million Indians🛡️ and 40+ lenders."
+        ],
+        "referral_code": "ASHO2060ZV",
+        "referral_link": "https://creditmntri.page.link/BA48",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.creditmantri&hl=en",
         "apple_app_store_link": ""
     }
 ]

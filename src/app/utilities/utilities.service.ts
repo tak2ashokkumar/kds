@@ -16,6 +16,11 @@ export const applications: AppData[] = [
   {
     displayName: 'Love Calculator',
     name: 'love-calculator',
-    defaultApp:'calculateLovePercentage'
+    defaultApp: 'calculateLovePercentage'
   },
+  {
+    displayName: 'COVID-19 Tracking',
+    name: 'covid',
+    defaultApp: 'covid-tracker'
+  }
 ]

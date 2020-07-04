@@ -1,7 +1,8 @@
 <div class="container-fluid app-body">
     <div class="row">
         <div class="col-6 col-sm-3 col-md-2 mt-4" *ngFor="let app of applications; let i = index">
-            <div class="card overflow-hidden equalize-card mb-3">
+            <div class="card overflow-hidden equalize-card mb-3" (click)="loadApplication(app)"
+            [ngClass]="{'border-success active': app.name == selectedApplication.name}">
                 <div class="card-body p-4 d-flex align-items-center">
                     <div>
                         <div class="category-heading text-uppercase text-primary font-weight-bold">
@@ -12,5 +13,10 @@
             </div>
         </div>
     </div>
-    <!-- <router-outlet></router-outlet> -->
+    <div class="row">
+        <!-- <div class="col-2"></div> -->
+        <div class="col-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

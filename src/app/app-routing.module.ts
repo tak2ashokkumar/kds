@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'referral-codes',
+    redirectTo: 'utils',
     pathMatch: 'full'
   },
   {

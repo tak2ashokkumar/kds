@@ -1,5 +1,53 @@
 [
     {
+        "name": "google_pay",
+        "display_name": "Google Pay (Tez)",
+        "features": [
+            "Conveniently pay bills",
+            "Recharge your prepaid mobile",
+            "Buy and sell 24K Gold",
+            "Book IRCTC train tickets",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Pay and receive money directly from bank account",
+            "Multiple layers of security from bank, UPI, and Google",
+            "Pay anyone. Even those without Google Pay",
+            "Get rewarded for money transfers"
+        ],
+        "description": [
+            "Send money to friends, pay bills and buy online, recharge your phone, or pay at the nearby café with Google Pay, a simple and secure payments app by Google.",
+            "The chaiwala nearby, neighbourhood kirana, and even your favorite salon can now accept payments on the spot with Tez Mode, all while keeping your personal and bank details private."
+        ],
+        "referral_code": "",
+        "referral_link": "https://g.co/payinvite/E21yd",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&hl=en_IN",
+        "apple_app_store_link": ""
+    },
+    {
+        "name": "phonepe",
+        "display_name": "PhonePe",
+        "features": [
+            "Pay Credit Card Bills",
+            "Buy and Sell Gold",
+            "Buy PhonePe Gift Cards",
+            "Invest in Tax saving funds",
+            "Make easy online payments",
+            "Pay at shops and offline stores",
+            "Transfer money with BHIM UPI",
+            "Recharge your mobile and DTH connection",
+            "Use your favourite Apps on PhonePe Switch",
+            "Manage and track refunds from shopping websites"
+        ],
+        "description": [
+            "PhonePe is a payments app that allows you to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, pay all your utility bills and also make instant payments at your favourite offline and online stores.",
+            "Link your bank account on the PhonePe app and transfer money with BHIM UPI instantly. The PhonePe app is safe and secure, meets all your payment and banking needs, and is much better than Internet banking. No need to remember IFSC codes, account numbers, or other details. Make instant bank transfers with BHIM UPI by just using a mobile number or a unique payment identity – your Virtual Payment Address (VPA)."
+        ],
+        "referral_code": "",
+        "referral_link": "https://phon.pe/ru_asho2xyk2",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN",
+        "apple_app_store_link": ""
+    },
+    {
         "name": "credy",
         "display_name": "Credy",
         "features": [
@@ -95,27 +143,33 @@
         "apple_app_store_link": "https://apps.apple.com/us/app/cred-pay-credit-card-bills/id1428580080"
     },
     {
-        "name": "bajaj_finserv",
-        "display_name": "Bajaj Finserv",
+        "name": "paisabazar",
+        "display_name": "Paisa Bazar",
         "features": [
-            "Personal Loan",
-            "Home Loan Balance Transfer ",
-            "Business Loan",
-            "Doctor Loan",
-            "Fixed Deposits + FD Calculator",
-            "Insurance products",
+            "Free Credit Report from CIBIL, Experian & CRIF Highmark",
+            "Personal loan offers from top banks and NBFCs",
+            "50+ Credit Card options from top providers",
+            "Business loan offers",
+            "Home loan options",
+            "Mutual fund investments",
             "Loan Against property",
-            "Chartered Accountant Loan",
-            "RBL- Bajaj Finserv Credit Card",
-            "EMI Card"
+            "EMI Calculators for different kinds of loans",
+            "Credit Score Assistance",
+            "Tax solutions",
+            "Banking & other related information",
+            "Financial guidance through experts",
+            "PB Tracker",
+            "Fixed Deposit",
+            "Digital Gold",
+            "Savings Account"
         ],
         "description": [
-            "The Bajaj Finserv Experia App is the one-stop solution for all post-loan or investment services provided by Bajaj Finserv, India’s most diversified non-banking financial company.",
-            "New users can also check their preapproved limit assigned for the following products, you just need to login using your mobile number and authenticate using OTP received."
+            "Paisabazaar is a one stop digital lending marketplace that offers Free Credit Report, personal loan, credit cards, business loan, home loans, mutual funds and many other financial services at one place.",
+            "Apart from being featured by various prominent media houses on regular basis, Paisabazaar has been awarded Best Financial Services award by Economic Times and has been recognized as the Best Emerging Brand by Indian Brand Convention and the CMO Asia Awards."
         ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&hl=en",
+        "referral_code": "qeYQwgPXv7",
+        "referral_link": "https://paisabazaar.app.link/qeYQwgPXv7",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.paisabazaar&hl=en_IN",
         "apple_app_store_link": ""
     }
 ]

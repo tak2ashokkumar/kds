@@ -42,12 +42,7 @@ export const applicationCategories: ApplicationCategory[] = [
     defaultApp: 'cred',
   },
   {
-    displayName: 'Loan Providers',
-    name: 'loan_providers',
-    defaultApp: 'credy',
-  },
-  {
-    displayName: 'Banking Apps',
+    displayName: 'Banking & Loan Apps',
     name: 'banking',
     defaultApp: 'google_pay',
   },

@@ -1,11 +1,11 @@
 <div class="row mt-4" style="background-color: #fff;min-height: 70vh;">
-    <div class="offset-1 col-4">
+    <div class="col-4">
         <div class="card my-5 px-3">
             <div class="card-header">
-                Calculate Love Percentage
+                Select Country
             </div>
             <div class="card-body">
-                <form [formGroup]="form">
+                <form [formGroup]="covidStatisticsForm">
                     <div class="form-group">
                         <div class="text-danger">
                             <span>* calculation is purely based on API from</span>
@@ -13,28 +13,23 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="boyname">First Person Name<em>*</em></label>
-                        <input class="form-control" id="boyname" formControlName="boyname" type="text"
-                            [ngClass]="{'is-invalid' : formErrors.boyname}">
-                        <div class="invalid-feedback" *ngIf="formErrors.boyname">{{formErrors.boyname}}</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="girlname">Second Person Name<em>*</em></label>
-                        <input class="form-control" id="girlname" formControlName="girlname" type="text"
-                            [ngClass]="{'is-invalid' : formErrors.girlname}">
-                        <div class="invalid-feedback" *ngIf="formErrors.girlname">{{formErrors.girlname}}</div>
+                        <label for="country">Country<em>*</em></label>
+                        <input class="form-control" id="country" formControlName="country" type="text"
+                            [ngClass]="{'is-invalid' : covidStatisticsFormErrors.country}">
+                        <div class="invalid-feedback" *ngIf="covidStatisticsFormErrors.country">
+                            {{covidStatisticsFormErrors.country}}</div>
                     </div>
                 </form>
             </div>
             <div class="card-footer">
-                <button class="btn btn-sm btn-success pull-right ml-1" (click)="calculate()"
+                <button class="btn btn-sm btn-success pull-right ml-1" (click)="getDetails()"
                     type="submit">Submit</button>
-                <button class="btn btn-sm btn-danger pull-right" (click)="buildForm()" type="button">Clear</button>
+                <!-- <button class="btn btn-sm btn-danger pull-right" (click)="buildForm()" type="button">Clear</button> -->
             </div>
         </div>
     </div>
     <div class="offset-1 col-5">
-        <div class="alert my-5" [ngClass]="getClass()" role="alert" *ngIf="result.fname">
+        <!-- <div class="alert my-5" [ngClass]="getClass()" role="alert" *ngIf="result.fname">
             <p>First Person Name : {{result.fname}}</p>
             <p>Second Person Name : {{result.sname}}</p>
             <p class="font-weight-bold">Percentage Match : {{result.percentage}}</p>
@@ -46,6 +41,6 @@
             <p>2. Click on submit.</p>
             <p>3. Result will be displayed on right side of form.</p>
             <p>4. Click on clear to reset the form.</p>
-        </div>
+        </div> -->
     </div>
 </div>

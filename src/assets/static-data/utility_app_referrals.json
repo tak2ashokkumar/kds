@@ -76,7 +76,7 @@
         "referral_code": "",
         "referral_link": "https://www.uber.com/invite/p5dsf6uwue",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.ubercab&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/uber/id368677368"
     },
     {
         "name": "urbanclap",
@@ -118,7 +118,7 @@
         "referral_code": "",
         "referral_link": "https://invite.urbanclap.com/1ErEzjbwe7",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/urbanclap-now-urban-company/id1032480595"
     },
     {
         "name": "mxplayer",
@@ -137,7 +137,25 @@
         "referral_code": "UFBIU7PE",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/mx-player/id1429703801"
+    },
+    {
+        "name": "times_prime",
+        "display_name": "Times Prime",
+        "features": [
+            "Sign Up --> Activate Offers --> Enjoy benefits!",
+            "Sign Up - Download the Times Prime app & register using your mobile number to start your 30-day free offers",
+            "Activate Offers - Select memberships & offers you like and click to Activate them",
+            "Enjoy benefits! - Goto the partner site/ app & login using the same mobile number to start availing benefits!"
+        ],
+        "description": [
+            "First of its kind lifestyle membership with access to multiple subscription services, brand offers, and events under a single roof. Our partners are market leaders in categories such as OTT Platforms, Dining, Food delivery, Entertainment & Media, Travel & Hotels, Grocery delivery, Online Shopping, Beauty & Wellness, Health & Medicine, Home care services and many more. We work with 25+ top brands in the country including Uber, PVR, Myntra, BigBasket, Oyo, Swiggy, Gaana, Times of India and many more. Try 12 offers for a month for free or Buy annual membership at 30% off using exciting payment offers from HDFC Timescard, Timespoints and Paytm.",
+            "Join millions of subscribers who enjoy the benefits of Gaana plus, TOI plus, Gourmet Passport (by DineOut), Swiggy Super and many other premium memberships. Also, get exciting offers on events & activities in your city courtesy our events partner - Insider. All this while you save up to Rs 60,000 every year!"
+        ],
+        "referral_code": "ASHO5723",
+        "referral_link": "https://timesprime.onelink.me/6hfI/ebab9c1a?promo=ASHO5723",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.timesprime.timesprimeandroid&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/times-prime-premium-membership/id1218665888"
     },
     {
         "name": "coupert",
@@ -179,7 +197,7 @@
         "referral_code": "4879AC3A53",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.zoomin.zoominphotoprints&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/zoomin-print-photos/id1459643759"
     },
     {
         "name": "zee5",
@@ -204,7 +222,7 @@
         "referral_code": "",
         "referral_link": "https://zee5.onelink.me/RlQq/50a25e7",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.graymatrix.did&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"
     },
     {
         "name": "stepsetgo",
@@ -226,7 +244,7 @@
         "referral_code": "ashokkiaas",
         "referral_link": "https://app.stepsetgo.com/i/ashokkiaas",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.pepkit.ssg",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/stepsetgo/id1434541801"
     },
     {
         "name": "paisawapas",
@@ -272,22 +290,28 @@
         "apple_app_store_link": ""
     },
     {
-        "name": "helo",
-        "display_name": "Helo",
+        "name": "redbus",
+        "display_name": "redBus",
         "features": [
-            "Create Content in Multiple Indian Languages",
-            "Daily Dose of Trending Videos & Posts",
-            "Features That Set Helo Apart",
-            "Multiple INDIAN LANGUAGES",
-            "Download Unlimited Videos & Shayaris"
+            "Andhra Pradesh State Road Transport Corporation (APSRTC)",
+            "Telangana State Road Transport Corporation (TSRTC)",
+            "Tamil Nadu State Transport Corporation (TNSTC)",
+            "West Bengal Surface Transport Corporation WBTC (CTC)",
+            "Uttarakhand Transport Corporation (UTC)",
+            "Kadamba Transport Corporation (KTCL)",
+            "KeralaRTC or Aanavandi",
+            "Uttar Pradesh State Road Transport Corporation (UPSRTC)",
+            "PEPSU Road Transport Corporation (PRTC)"
         ],
         "description": [
-            "Helo is India's leading social media platform with 🔥 50,000,000+ users",
-            "Download Helo today and start creating, reading, watching, sharing and discussing with others!"
+            "redBus offers a quick and simple booking process to procure bus tickets on luxury buses and at a low price.",
+            "All you have to do is enter your departure and destination locations along with the date of your planned journey. Choose from a plethora of bus operators offering a variant of buses that are available on the route. Use any of the filters like bus types, pick-up and drop-off locations, prices, ratings and reviews, etc. to help you arrange your options accordingly, thereby offering a unique search.",
+            "Select your seat, complete your payment, and that’s it! You have now successfully booked your bus ticket online with redBus bus ticket booking app. Avail any of the numerous discounts and cashback offers that are available on the app!",
+            "redBus also offers carpool and bike pooling services. rPool offers travel insurance to those who use this feature to travel from one point to another. Along with privacy protection, rPool also provides its users with the opportunity to earn rewards through rPool points when you use the app"
         ],
-        "referral_code": "",
-        "referral_link": "",
-        "google_play_store_link": "https://play.google.com/store/apps/details?id=app.buzz.share",
-        "apple_app_store_link": ""
+        "referral_code": "REDP77T5",
+        "referral_link": "http://www.redbus.com/referral/redp77t5",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=in.redbus.android&hl=en_IN",
+        "apple_app_store_link": "https://apps.apple.com/in/app/redbus-rpool/id733712604"
     }
 ]

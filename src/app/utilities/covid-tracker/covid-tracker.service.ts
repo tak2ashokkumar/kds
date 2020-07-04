@@ -1,44 +1,39 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { GET_LOVE_PERCENTAGE, RAPID_API_KEY } from 'src/app/rapid-api-const';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { GET_COVID_DATA, RAPID_API_KEY } from 'src/app/rapid-api-const';
 
 @Injectable()
-export class LoveCalculatorService {
+export class CovidTrackerService {
 
   constructor(private http: HttpClient,
     private builder: FormBuilder) { }
 
-  resetFormErrors(): any {
+  resetStatisticsFormErrors(): any {
     let formErrors = {
-      'boyname': '',
-      'girlname': '',
+      'country': '',
     };
     return formErrors;
   }
 
-  validationMessages = {
-    'boyname': {
+  statisticsFormValidationMessages = {
+    'country': {
       'required': 'Boy name is required.'
-    },
-    'girlname': {
-      'required': 'Girl name is required.'
     }
   };
 
 
-  buildForm(): FormGroup {
-    this.resetFormErrors();
+  buildStatisticsForm(): FormGroup {
+    this.resetStatisticsFormErrors();
     return this.builder.group({
-      'boyname': ['', [Validators.required]],
-      'girlname': ['', [Validators.required]]
+      'country': ['', [Validators.required]],
     })
   }
 
-  getPercentageByNames(formData: FormValues): Observable<LoveCalculatorOutput> {
+  getPercentageByNames(formData: any): Observable<any> {
     let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', 'love-calculator.p.rapidapi.com').append('x-rapidapi-key', RAPID_API_KEY());
-    return this.http.get<LoveCalculatorOutput>(GET_LOVE_PERCENTAGE(formData.boyname, formData.girlname), { headers: headers });
+    return this.http.get<any>(GET_COVID_DATA(), { headers: headers });
   }
 
   validateForm(form: FormGroup, validationMessages: any, formErrors: any) {
@@ -64,19 +59,4 @@ export class LoveCalculatorService {
     }
     return formErrors;
   }
-
-}
-
-export class FormValues {
-  boyname: string;
-  girlname: string;
-  constructor() { }
-}
-
-export class LoveCalculatorOutput {
-  fname: string;
-  sname: string;
-  percentage: string;
-  result: string;
-  constructor() { }
 }

@@ -20,7 +20,33 @@
         "referral_code": "",
         "referral_link": "https://amzn.in/j5jTaep",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping&hl=en",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/us/app/amazon-shopping-made-easy/id297606951"
+    },
+    {
+        "name": "myntra",
+        "display_name": "Myntra",
+        "features": [
+            "Clothing",
+            "Accessories",
+            "Footwear",
+            "Home and Lifestyle",
+            "Beauty",
+            "Gadgets",
+            "100% original products",
+            "Hassle-free 30 days exchange & returns",
+            "Express delivery",
+            "Secure payment & EMI options"
+        ],
+        "description": [
+            "Choose from the best of brands, and shop for clothing, footwear, accessories and home furnishing for men, women and kids, all at the click of a button.",
+            "Check out your personalised fashion feed refreshed daily by the style icons and brands you love.",
+            "best, hassle-free shopping experience from your mobile as you shop from your home, your workplace or on-the-go.",
+            "Track, exchange, return with just a click"
+        ],
+        "referral_code": "wshq3h",
+        "referral_link": "https://myntra.onelink.me/eWcy?pid=Referral",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059"
     },
     {
         "name": "shop_clues",
@@ -62,7 +88,7 @@
         "referral_code": "YAHH73KN",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.quikr&hl=en_IN",
-        "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
+        "apple_app_store_link": "https://apps.apple.com/in/app/quikr-local-classifieds/id632051273"
     },
     {
         "name": "olx",
@@ -87,6 +113,23 @@
         "apple_app_store_link": "https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792"
     },
     {
+        "name": "mi_store",
+        "display_name": "Mi Store",
+        "features": [
+            "Mobiles",
+            "Electronics",
+            "Fashion"
+        ],
+        "description": [
+            "Mi Store is Xiaomi’s official Android app to help you shop on-the-move. It offers a fast and intuitive interface to search, browse and purchase all Mi products, including phones, tablets and accessories, register for flash sales, pay securely using multiple payment options and track order delivery status. With this app, we'll ensure you have first dibs on all our new product launches and our special discount offers.",
+            "Mi.com’s easy replacement policy ensures that you get a replacement in case of any defects in the original product. Give us a call through the ‘Service’ tab in Mi Store to explain the issue you’re facing with your mi.com purchase, and our team will help resolve it. If the resolution doesn’t address the concern, we’ll ship out a replacement at no extra cost."
+        ],
+        "referral_code": "",
+        "referral_link": "https://m.store.mi.com/in/reward/inviteland?inviteKey=3hs7v7oTBKbOYuTudRzdYOe24is9eZ217-KTew9Iq5Y=",
+        "google_play_store_link": "https://play.google.com/store/apps/details?id=com.mi.global.shop&hl=en",
+        "apple_app_store_link": "https://apps.apple.com/in/app/mi-store/id1268565993"
+    },
+    {
         "name": "cashify",
         "display_name": "Cashify",
         "features": [
@@ -102,7 +145,7 @@
         "referral_code": "VJLJKRD0",
         "referral_link": "",
         "google_play_store_link": "https://play.google.com/store/apps/details?id=com.reglobe.cashify",
-        "apple_app_store_link": ""
+        "apple_app_store_link": "https://apps.apple.com/in/app/cashify-sell-used-gadgets/id1133551195"
     },
     {
         "name": "snapdeal",

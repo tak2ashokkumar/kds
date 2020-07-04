@@ -34,7 +34,7 @@
 <ng-template #referralsInfo>
     <div class="card alert-success-card" style="height:100%">
         <ng-container *ngTemplateOutlet="referralsInfoHeader"></ng-container>
-        <div class="card-body">
+        <div class="card-body pb-0">
             <p class="font-weight-normal" *ngFor="let desc of selectedVendor.description">
                 {{desc}}
             </p>

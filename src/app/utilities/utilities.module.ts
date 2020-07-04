@@ -4,12 +4,14 @@ import { UtilitiesRoutingModule } from './utilities-routing.module';
 
 import { UtilitiesComponent } from './utilities.component';
 import { LoveCalculatorComponent } from './love-calculator/love-calculator.component';
+import { CovidTrackerComponent } from './covid-tracker/covid-tracker.component';
 
 
 @NgModule({
   declarations: [
     UtilitiesComponent,
     LoveCalculatorComponent,
+    CovidTrackerComponent,
   ],
   imports: [
     AppCoreModule,
