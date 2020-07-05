@@ -23,7 +23,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
     BrowserAnimationsModule,
     AppCoreModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [{
     provide: LocationStrategy,

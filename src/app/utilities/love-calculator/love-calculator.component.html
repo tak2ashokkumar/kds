@@ -34,18 +34,19 @@
         </div>
     </div>
     <div class="offset-1 col-5">
-        <div class="alert my-5" [ngClass]="getClass()" role="alert" *ngIf="result.fname">
-            <p>First Person Name : {{result.fname}}</p>
-            <p>Second Person Name : {{result.sname}}</p>
-            <p class="font-weight-bold">Percentage Match : {{result.percentage}}</p>
-            <p class="font-weight-bold"><cite>Match Result : {{result.result}}</cite></p>
-        </div>
-
         <div class="alert alert-secondary my-5" role="alert" *ngIf="!result.fname">
             <p>1. Provide Boy's name and Girl's name.</p>
             <p>2. Click on submit.</p>
             <p>3. Result will be displayed on right side of form.</p>
             <p>4. Click on clear to reset the form.</p>
         </div>
+
+        <alert class="d-block my-5" [type]="getClass()" *ngIf="result.fname">
+            <h4 class="alert-heading">Results based on Provided Names</h4>
+            <p class="mt-4">First Person Name : {{result.fname}}</p>
+            <p>Second Person Name : {{result.sname}}</p>
+            <p class="font-weight-bold">Percentage Match : {{result.percentage}}</p>
+            <p class="font-weight-bold"><cite>Match Result : {{result.result}}</cite></p>
+        </alert>
     </div>
 </div>

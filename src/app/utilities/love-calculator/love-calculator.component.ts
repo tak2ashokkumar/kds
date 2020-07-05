@@ -54,11 +54,11 @@ export class LoveCalculatorComponent implements OnInit {
   getClass() {
     const percentage = Number(this.result.percentage)
     if (percentage >= 50) {
-      return 'alert-success';
+      return 'success';
     } else if (percentage >= 30) {
-      return 'alert-warning';
+      return 'warning';
     } else {
-      return 'alert-danger';
+      return 'danger';
     }
   }
 }
