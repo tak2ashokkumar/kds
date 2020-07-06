@@ -33,7 +33,6 @@ export class CovidTrackerService {
   }
 
   getCovidStatistics(country?: string): Observable<CovidStatisticsObject> {
-    console.log('country:', country);
     let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', 'covid-193.p.rapidapi.com').append('x-rapidapi-key', RAPID_API_KEY());
     return this.http.get<CovidStatisticsObject>(GET_COVID_DATA(country), { headers: headers });
   }

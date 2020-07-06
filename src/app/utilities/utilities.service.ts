@@ -24,3 +24,9 @@ export const applications: AppData[] = [
     defaultApp: 'covid-tracker'
   }
 ]
+
+export enum countries {
+  india = 'in',
+  China = '',
+  Italy = '',
+}

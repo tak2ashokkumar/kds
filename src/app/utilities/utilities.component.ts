@@ -21,7 +21,7 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute) {
     this.route.params.subscribe(param => {
-      console.log('param : ', param);
+      // console.log('param : ', param);
       this.selectedApplicationName = param.appName;
     })
   }
@@ -37,15 +37,15 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
 
   getAppData() {
     if (this.selectedApplicationName) {
-      console.log('this.selectedApplicationName : ', this.selectedApplicationName);
+      // console.log('this.selectedApplicationName : ', this.selectedApplicationName);
       for (var i = 0; i < this.applications.length; i++) {
         if (this.applications[i].name == this.selectedApplicationName) {
           this.selectedApplication = this.applications[i];
         }
       }
-      console.log('this.selectedApplication : ', this.selectedApplication);
+      // console.log('this.selectedApplication : ', this.selectedApplication);
       this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-        console.log('this.selectedApplicationData : ', this.selectedApplicationData);
+        // console.log('this.selectedApplicationData : ', this.selectedApplicationData);
         if (this.selectedApplicationData) {
           this.router.navigate([this.selectedApplicationData], { relativeTo: this.route });
         } else {
@@ -55,7 +55,7 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
     } else {
       this.selectedApplication = this.applications[0];
       this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-        this.router.navigate([this.applications[0].name, this.applications[0].defaultApp], { relativeTo: this.route });
+        this.router.navigate([this.applications[0].name, this.applications[0].defaultApp], { relativeTo: this.route.parent });
       });
     }
   }

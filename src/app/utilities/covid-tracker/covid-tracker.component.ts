@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { CovidTrackerService, CovidStatisticsData } from './covid-tracker.service'
 import { takeUntil } from 'rxjs/operators';
 import { HttpErrorResponse } from '@angular/common/http';
+import { countries } from 'src/app/app-const';
 
 @Component({
   selector: 'covid-tracker',
@@ -22,10 +23,17 @@ export class CovidTrackerComponent implements OnInit {
   covidResults: CovidStatisticsData[] = [];
   loadingData: boolean = false;
 
+  countryCodes: countries;
+
   constructor(private covidTracker: CovidTrackerService) { }
 
   ngOnInit(): void {
     this.getCovidStatistics();
+  }
+
+  getFlagClass(country: string) {
+    // let countryCode = countries[country];
+    return 'flag-icon-' + countries[country];
   }
 
   buildCovidStatisticsForm() {
@@ -43,9 +51,9 @@ export class CovidTrackerComponent implements OnInit {
     this.loadingData = true;
     this.covidTracker.getCovidStatistics(country).pipe(takeUntil(this.ngUnsubscribe)).subscribe(data => {
       this.covidResults = this.covidTracker.convertToViewData(data.response);
-      console.log('after sort : ', this.sortBy('totalCases'))
+      // console.log('after sort : ', this.sortBy('totalCases'))
       this.loadingData = false;
-      console.log('covid response : ', data);
+      // console.log('covid response : ', data);
     }, (err: HttpErrorResponse) => {
       this.loadingData = false;
       console.log('err in getting covid results : ', err);
