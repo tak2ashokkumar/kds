@@ -8,6 +8,8 @@ import { CovidTrackerComponent } from './covid-tracker/covid-tracker.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { NgpSortModule } from "ngp-sort-pipe";
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { NgpSortModule } from "ngp-sort-pipe";
     UtilitiesRoutingModule,
     AlertModule.forRoot(),
     ButtonsModule.forRoot(),
+    ModalModule.forRoot(),
+    PopoverModule.forRoot(),
     NgpSortModule
   ]
 })

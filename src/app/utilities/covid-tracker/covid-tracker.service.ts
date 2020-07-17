@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { GET_COVID_DATA, RAPID_API_KEY } from 'src/app/rapid-api-const';
 import { CovidStatisticsObject, CovidResponseItem } from './covid-tracker.type';
+import { countries } from 'src/app/app-const';
 
 @Injectable()
 export class CovidTrackerService {
@@ -38,39 +39,31 @@ export class CovidTrackerService {
   }
 
   convertToViewData(results: CovidResponseItem[]): CovidStatisticsData[] {
-    let viewData: CovidStatisticsData[] = [];
+    let countriesViewData: CovidStatisticsData[] = [];
     results.map(countryRelatedData => {
-      let a: CovidStatisticsData = new CovidStatisticsData();
-      a.continent = countryRelatedData.continent;
-      a.country = countryRelatedData.country;
-      a.population = countryRelatedData.population;
-      a.day = countryRelatedData.day;
-      a.time = countryRelatedData.time;
-      a.totalCases = countryRelatedData.cases.total;
+      if (countries[countryRelatedData.country]) {
+        let a: CovidStatisticsData = new CovidStatisticsData();
+        a.countryFlagIcon = `flag-icon-${countries[countryRelatedData.country]}`;
+        a.continent = countryRelatedData.continent;
+        a.country = countryRelatedData.country;
+        a.population = countryRelatedData.population;
+        a.day = countryRelatedData.day;
+        a.time = countryRelatedData.time;
+        a.totalCases = countryRelatedData.cases.total;
+        a.totalTests = countryRelatedData.tests.total;
 
-      let cc: CovidCase = new CovidCase();
-      cc.newCases = countryRelatedData.cases.new;
-      cc.activeCases = countryRelatedData.cases.active;
-      cc.criticalCases = countryRelatedData.cases.critical;
-      cc.recoveredCases = countryRelatedData.cases.recovered;
-      cc.totalCases = countryRelatedData.cases.total;
+        a.newCases = countryRelatedData.cases.new;
+        a.activeCases = countryRelatedData.cases.active;
+        a.criticalCases = countryRelatedData.cases.critical;
+        a.recoveredCases = countryRelatedData.cases.recovered;
+        a.totalCases = countryRelatedData.cases.total;
 
-      a.casesData = cc;
-
-      let cd: CovidDeath = new CovidDeath();
-      cd.newDeaths = countryRelatedData.deaths.new;
-      cd.totalDeaths = countryRelatedData.deaths.total;
-
-      a.deathsData = cd;
-
-      let ct: CovidTest = new CovidTest();
-      ct.totalTests = countryRelatedData.tests.total;
-
-      a.testsData = ct;
-
-      viewData.push(a);
+        a.totalDeaths = countryRelatedData.deaths.total;
+        a.newDeaths = countryRelatedData.deaths.new;
+        countriesViewData.push(a);
+      }
     })
-    return viewData;
+    return countriesViewData;
   }
 
   validateForm(form: FormGroup, validationMessages: any, formErrors: any) {
@@ -97,36 +90,22 @@ export class CovidTrackerService {
     return formErrors;
   }
 }
-
-export class CovidCase {
-  activeCases: number;
-  criticalCases: number;
-  newCases: string;
-  recoveredCases: number;
-  totalCases: number;
-  constructor() { }
-}
-
-export class CovidDeath {
-  newDeaths: number;
-  totalDeaths: number;
-  constructor() { }
-}
-
-export class CovidTest {
-  totalTests: number;
-  constructor() { }
-}
-
 export class CovidStatisticsData {
   continent: string;
   country: string;
+  countryFlagIcon: string;
   day: string;
   population: number;
   time: string;
+  totalTests: number;
+
   totalCases: number;
-  casesData: CovidCase;
-  deathsData: CovidDeath;
-  testsData: CovidTest;
+  activeCases: number;
+  newCases: string;
+  recoveredCases: number;
+  criticalCases: number;
+
+  totalDeaths: number;
+  newDeaths: number;
   constructor() { }
 }

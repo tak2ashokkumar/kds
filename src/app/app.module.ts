@@ -11,6 +11,8 @@ import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 import { AppCoreModule } from './app-core/app-core.module'
 import { AppHeaderComponent } from './app-header/app-header.component';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { AppHeaderComponent } from './app-header/app-header.component';
     BrowserAnimationsModule,
     AppCoreModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,

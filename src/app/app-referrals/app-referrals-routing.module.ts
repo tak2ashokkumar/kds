@@ -6,9 +6,9 @@ import { ReferralAppDataComponent } from './referral-app-data/referral-app-data.
 
 const routes: Routes = [
   {
-    path: '', component: AppReferralsComponent,
+    path: ':appCategory', component: AppReferralsComponent,
     children: [
-      { path: ':appCategory/:app', component: ReferralAppDataComponent }
+      { path: ':app', component: ReferralAppDataComponent },
     ]
   }
 ];

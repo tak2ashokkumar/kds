@@ -12,11 +12,6 @@ const routes: Routes = [
       { path: 'calculateLovePercentage', component: LoveCalculatorComponent },
       { path: 'covid-tracker', component: CovidTrackerComponent },
     ]
-  },
-  {
-    path: '',
-    redirectTo: 'love-calculator',
-    pathMatch: 'full'
   }
 ];
 

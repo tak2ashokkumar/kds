@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { AppMainComponent } from './app-main/app-main.component';
 import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 
@@ -16,8 +16,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'utils',
-    pathMatch: 'full'
+    // redirectTo: 'utils/covid', pathMatch: 'full'
+    redirectTo: 'referral-codes/bill_payments', pathMatch: 'full'
   },
   {
     path: '404',
@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

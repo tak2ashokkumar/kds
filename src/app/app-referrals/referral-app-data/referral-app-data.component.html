@@ -9,7 +9,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let vendor of categoryVendors; let i = index"
+                <tr *ngFor="let vendor of categoryVendors; let i = index" class="link"
                     [ngClass]="{'table-success': vendor.name == selectedVendor.name}" (click)="showVendorData(vendor)">
                     <td class="font-weight-bold w-25">{{vendor.display_name}}</td>
                     <td class="w-25">

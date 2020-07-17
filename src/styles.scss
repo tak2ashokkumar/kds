@@ -3,8 +3,16 @@ body {
   background-color: #f4f3ef;
 }
 
-.content-wrapper{
+.content-wrapper {
   padding: 20px;
   background-color: #fff;
   height: 100%;
+}
+
+.popover-content.popover-body {
+  padding: 0px !important;
+}
+
+.link {
+  cursor: pointer;
 }

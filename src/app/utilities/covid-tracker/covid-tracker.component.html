@@ -14,14 +14,19 @@
 
     <div class="col-12 my-2">
         <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let result of covidResults | sortBy: 'asc':'country'">
-                <div class="card">
+            <div class="col-xs-6 col-md-4 col-lg-3 col-xl-2"
+                *ngFor="let result of covidResults | sortBy: 'desc':'totalCases'">
+                <div class="card" (click)="selectedResult = result" [popover]="template" [outsideClick]="true"
+                    container="body">
                     <div class="card-body p-2 d-flex align-items-center">
                         <div class="mfe-3">
-                            <span class="flag-icon" [ngClass]="getFlagClass(result.country)" style="font-size: 40px;"></span>
+                            <span *ngIf="result.countryFlagIcon" class="flag-icon" [ngClass]="result.countryFlagIcon"
+                                style="font-size: 40px;"></span>
+                            <span *ngIf="!result.countryFlagIcon" class="text-muted font-weight-bold"
+                                style="font-size: 25px;"> N/A</span>
                         </div>
                         <div class="text-truncate">
-                            <div class="text-value text-info">{{result.casesData.totalCases}} Cases</div>
+                            <div class="text-value text-info">{{result.totalCases}} Cases</div>
                             <div class="text-muted font-weight-bold small text-truncate">{{result.country}}</div>
                         </div>
                     </div>
@@ -34,3 +39,23 @@
         </div>
     </div>
 </div>
+
+<ng-template #template>
+    <div class="list-group list-group-accent">
+        <div class="list-group-item bg-light text-center font-weight-bold">
+            <div>Last Updated on {{selectedResult.time | date: 'medium'}}</div>
+        </div>
+        <div class="list-group-item bg-light text-muted font-weight-bold">
+            <span class="mr-3">Tests Conducted: {{selectedResult.totalTests}}</span>
+            <span>Positive Cases: {{selectedResult.totalCases}}</span>
+        </div>
+        <div class="list-group-item text-muted font-weight-bold">
+            <small class= "mr-3"> New Cases: {{selectedResult.newCases}}</small>
+            <small class="mr-3"> Active Cases: {{selectedResult.activeCases}}</small>
+            <small class=""> Recovered: {{selectedResult.recoveredCases}}</small> <br>
+            <small class="text-muted mr-3"> New Deaths: {{selectedResult.newDeaths}}</small>
+            <small class="text-muted mr-3"> Total Deaths: {{selectedResult.totalDeaths}}</small>
+            <small class="text-muted"> Critical Cases: {{selectedResult.criticalCases}}</small>
+        </div>
+    </div>
+</ng-template>

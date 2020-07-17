@@ -21,15 +21,16 @@ export class ReferralAppDataComponent implements OnInit, OnDestroy {
   constructor(private referralsService: AppReferralsService,
     private router: Router,
     private route: ActivatedRoute) {
-    this.route.params.subscribe(param => {
-      this.vendorCategory = param.appCategory;
-      this.vendorName = param.app;
-    });
+    this.route.paramMap.subscribe(param => {
+      this.vendorName = param.get('app');
+    })
+    this.route.parent.paramMap.subscribe(param => {
+      this.vendorCategory = param.get('appCategory');
+      this.getRelatedVendors();
+    })
   }
 
-  ngOnInit() {
-    this.getRelatedVendors();
-  }
+  ngOnInit() { }
 
   ngOnDestroy() {
     this.ngUnsubscribe.next();
@@ -41,17 +42,13 @@ export class ReferralAppDataComponent implements OnInit, OnDestroy {
     this.selectedVendor = new VendorDescriptionData();
     this.referralsService.getCategoryVendors(this.vendorCategory).pipe(takeUntil(this.ngUnsubscribe)).subscribe((data: VendorDescriptionData[]) => {
       this.categoryVendors = data;
-      data.map((vendor, index) => {
-        if (vendor.name == this.vendorName) {
-          this.selectedVendor = data[index];
-        }
-      })
+      this.selectedVendor = data.filter(vendor => vendor.name == this.vendorName).shift();
     })
   }
 
   showVendorData(view: VendorDescriptionData) {
     this.selectedVendor = view;
-    this.router.navigate([this.vendorCategory, this.selectedVendor.name], { relativeTo: this.route.parent })
+    this.router.navigate([this.selectedVendor.name], { relativeTo: this.route.parent });
   }
 
 }

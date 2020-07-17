@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Subject } from 'rxjs';
 import { FormGroup } from '@angular/forms';
 import { CovidTrackerService, CovidStatisticsData } from './covid-tracker.service'
@@ -21,6 +21,7 @@ export class CovidTrackerComponent implements OnInit {
 
   uncheckableRadioModel: string = 'statistics';
   covidResults: CovidStatisticsData[] = [];
+  selectedResult: CovidStatisticsData = new CovidStatisticsData();
   loadingData: boolean = false;
 
   countryCodes: countries;
@@ -29,11 +30,6 @@ export class CovidTrackerComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCovidStatistics();
-  }
-
-  getFlagClass(country: string) {
-    // let countryCode = countries[country];
-    return 'flag-icon-' + countries[country];
   }
 
   buildCovidStatisticsForm() {
@@ -70,6 +66,10 @@ export class CovidTrackerComponent implements OnInit {
     } else {
       this.getCovidStatistics();
     }
+  }
+
+  showSelectedResult(result : CovidStatisticsData) {
+    this.selectedResult = result; 
   }
 
 }

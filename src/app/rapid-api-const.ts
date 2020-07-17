@@ -19,3 +19,5 @@ export const GET_COVID_DATA = (country?: string) => {
         return `https://covid-193.p.rapidapi.com/statistics`;
     }
 }
+
+export const GET_QUOTE_OF_THE_DAY = () => `https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info`;
