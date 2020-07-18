@@ -42,10 +42,12 @@
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="text-center w-100" id="navbarText">
+    <div class="text-center w-100 text-truncate" id="navbarText">
         <blockquote class="blockquote mb-0" *ngIf="quote.text">
-            <p class="mb-0 text-white">{{quote.text}}</p>
-            <footer class="blockquote-footer"><cite>{{quote.author}}</cite></footer>
+            <p class="mb-0 text-warning font-weight-bold fs-60">{{quote.text}}</p>
+            <footer class="blockquote-footer text-warning">
+                <cite class="font-weight-bold small">{{quote.author}}</cite>
+            </footer>
         </blockquote>
     </div>
     <div class="collapse navbar-collapse mr-5">

@@ -1,3 +1,11 @@
+export class LoveCalculatorOutput {
+    fname: string;
+    sname: string;
+    percentage: string;
+    result: string;
+    constructor() { }
+}
+
 export interface CovidStatisticsObject {
     get: string;
     parameters: CovidAPIParameter;
@@ -34,4 +42,18 @@ export interface CovidDeaths {
 export interface CovidTests {
     '1M_pop': string;
     total: number;
+}
+
+export interface RandomQuoteDetails {
+    id: number;
+    language_code: string;
+    content: string;
+    url: string;
+    originator: Originator;
+    tags: string[];
+}
+export interface Originator {
+    id: number;
+    name: string;
+    url: string;
 }

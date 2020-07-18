@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { LoveCalculatorService, LoveCalculatorOutput } from './love-calculator.service';
+import { LoveCalculatorService } from './love-calculator.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
-import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup } from '@angular/forms';
+import { LoveCalculatorOutput } from 'src/app/rapid-api/rapid-api.type';
 
 @Component({
   selector: 'love-calculator',
@@ -43,7 +43,6 @@ export class LoveCalculatorComponent implements OnInit {
       return;
     } else {
       this.loveCalculatorService.getPercentageByNames(this.form.getRawValue()).pipe(takeUntil(this.ngUnsubscribe)).subscribe(data => {
-        console.log('data : ', data);
         this.result = data;
       }, (err: HttpErrorResponse) => {
         console.log('err in calculating percentage is : ', err);

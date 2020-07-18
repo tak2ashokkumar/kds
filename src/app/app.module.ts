@@ -18,7 +18,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     AppComponent,
     AppMainComponent,
     AppHeaderComponent,
-    InvalidRouteComponent
+    InvalidRouteComponent,
   ],
   imports: [
     BrowserModule,

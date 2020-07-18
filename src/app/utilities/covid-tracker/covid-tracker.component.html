@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-xs-6 col-md-4 col-lg-3 col-xl-2"
                 *ngFor="let result of covidResults | sortBy: 'desc':'totalCases'">
-                <div class="card" (click)="selectedResult = result" [popover]="template" [outsideClick]="true"
+                <div class="card link" (click)="selectedResult = result" [popover]="template" [outsideClick]="true"
                     container="body">
                     <div class="card-body p-2 d-flex align-items-center">
                         <div class="mfe-3">

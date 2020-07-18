@@ -19,13 +19,13 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
   activeModule: string = null;
   constructor(private headerService: AppHeaderService,
     private router: Router,
-    private route: ActivatedRoute) { 
-      router.events.subscribe(val => {
-        if(val instanceof NavigationEnd){
-          this.activeModule = val.url.split('/')[1]
-        }
-      })
-    }
+    private route: ActivatedRoute) {
+    router.events.subscribe(val => {
+      if (val instanceof NavigationEnd) {
+        this.activeModule = val.url.split('/')[1]
+      }
+    })
+  }
 
   ngOnInit() {
     this.getTodaysQuote();
@@ -38,7 +38,7 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
 
   getTodaysQuote() {
     this.headerService.getTodaysQuote().pipe(takeUntil(this.ngUnsubscribe)).subscribe(data => {
-      this.quote = data;
+      this.quote = this.headerService.convertToViewData(data);
     }, (err: HttpErrorResponse) => {
       console.log('err : ', err);
     })

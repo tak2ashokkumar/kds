@@ -21,7 +21,6 @@ export class UtilitiesComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute) {
     this.route.paramMap.subscribe(param => {
       this.selectedApplicationName = param.get('appName');
-      console.log('selectedApplicationName : ', this.selectedApplicationName);
       if (this.selectedApplicationName != this.router.url.split('/').pop()) {
         this.selectedApplicationExt = this.router.url.split('/').pop();
       }

@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { GET_LOVE_PERCENTAGE, RAPID_API_KEY } from 'src/app/rapid-api-const';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { LoveCalculatorOutput } from 'src/app/rapid-api/rapid-api.type';
+import { LOVE_CALCULATOR_HOST, RAPID_API_KEY } from 'src/app/rapid-api/rapid-api-authentication.const';
+import { GET_LOVE_PERCENTAGE } from 'src/app/rapid-api/rapid-api-endpoint.const';
 
 @Injectable()
 export class LoveCalculatorService {
@@ -37,7 +39,7 @@ export class LoveCalculatorService {
   }
 
   getPercentageByNames(formData: FormValues): Observable<LoveCalculatorOutput> {
-    let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', 'love-calculator.p.rapidapi.com').append('x-rapidapi-key', RAPID_API_KEY());
+    let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', LOVE_CALCULATOR_HOST()).append('x-rapidapi-key', RAPID_API_KEY());
     return this.http.get<LoveCalculatorOutput>(GET_LOVE_PERCENTAGE(formData.boyname, formData.girlname), { headers: headers });
   }
 
@@ -73,10 +75,4 @@ export class FormValues {
   constructor() { }
 }
 
-export class LoveCalculatorOutput {
-  fname: string;
-  sname: string;
-  percentage: string;
-  result: string;
-  constructor() { }
-}
+

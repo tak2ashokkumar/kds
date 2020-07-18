@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { GET_COVID_DATA, RAPID_API_KEY } from 'src/app/rapid-api-const';
-import { CovidStatisticsObject, CovidResponseItem } from './covid-tracker.type';
 import { countries } from 'src/app/app-const';
+import { CovidStatisticsObject, CovidResponseItem } from 'src/app/rapid-api/rapid-api.type';
+import { GET_COVID_DATA } from 'src/app/rapid-api/rapid-api-endpoint.const';
+import { COVID_TRACKER_HOST, RAPID_API_KEY } from 'src/app/rapid-api/rapid-api-authentication.const';
 
 @Injectable()
 export class CovidTrackerService {
@@ -34,7 +35,7 @@ export class CovidTrackerService {
   }
 
   getCovidStatistics(country?: string): Observable<CovidStatisticsObject> {
-    let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', 'covid-193.p.rapidapi.com').append('x-rapidapi-key', RAPID_API_KEY());
+    let headers: HttpHeaders = new HttpHeaders().set('x-rapidapi-host', COVID_TRACKER_HOST()).append('x-rapidapi-key', RAPID_API_KEY());
     return this.http.get<CovidStatisticsObject>(GET_COVID_DATA(country), { headers: headers });
   }
 

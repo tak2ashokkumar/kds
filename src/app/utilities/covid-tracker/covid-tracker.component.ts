@@ -47,9 +47,7 @@ export class CovidTrackerComponent implements OnInit {
     this.loadingData = true;
     this.covidTracker.getCovidStatistics(country).pipe(takeUntil(this.ngUnsubscribe)).subscribe(data => {
       this.covidResults = this.covidTracker.convertToViewData(data.response);
-      // console.log('after sort : ', this.sortBy('totalCases'))
       this.loadingData = false;
-      // console.log('covid response : ', data);
     }, (err: HttpErrorResponse) => {
       this.loadingData = false;
       console.log('err in getting covid results : ', err);
