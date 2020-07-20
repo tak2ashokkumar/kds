@@ -14,15 +14,20 @@ export class AppData {
 
 export const applications: AppData[] = [
   {
-    displayName: 'Love Calculator',
-    name: 'love-calculator',
-    defaultApp: 'calculateLovePercentage'
+    displayName: 'Html to PDF Coverter',
+    name: 'html-to-pdf',
+    defaultApp: 'pdf-generator'
   },
   {
     displayName: 'COVID-19 Tracking',
     name: 'covid',
     defaultApp: 'covid-tracker'
-  }
+  },
+  {
+    displayName: 'Love Calculator',
+    name: 'love-calculator',
+    defaultApp: 'calculateLovePercentage'
+  },
 ]
 
 export enum countries {

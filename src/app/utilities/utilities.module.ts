@@ -2,28 +2,29 @@ import { NgModule } from '@angular/core';
 import { AppCoreModule } from '../app-core/app-core.module';
 import { UtilitiesRoutingModule } from './utilities-routing.module';
 
-import { UtilitiesComponent } from './utilities.component';
-import { LoveCalculatorComponent } from './love-calculator/love-calculator.component';
-import { CovidTrackerComponent } from './covid-tracker/covid-tracker.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
-import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { NgpSortModule } from "ngp-sort-pipe";
-import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap/popover';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
+import { UtilitiesComponent } from './utilities.component';
+import { HtmlToPdfConverterComponent } from './html-to-pdf-converter/html-to-pdf-converter.component';
+import { CovidTrackerComponent } from './covid-tracker/covid-tracker.component';
+import { LoveCalculatorComponent } from './love-calculator/love-calculator.component';
 
 
 @NgModule({
   declarations: [
     UtilitiesComponent,
-    LoveCalculatorComponent,
+    HtmlToPdfConverterComponent,
     CovidTrackerComponent,
+    LoveCalculatorComponent,
   ],
   imports: [
     AppCoreModule,
     UtilitiesRoutingModule,
+    TabsModule.forRoot(),
     AlertModule.forRoot(),
-    ButtonsModule.forRoot(),
-    ModalModule.forRoot(),
     PopoverModule.forRoot(),
     NgpSortModule
   ]

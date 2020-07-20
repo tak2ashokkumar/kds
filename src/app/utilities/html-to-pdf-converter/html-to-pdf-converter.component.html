@@ -1,0 +1,39 @@
+<div class="row mt-4" style="background-color: #fff;min-height: 70vh;">
+    <div class="col-12 my-3">
+        <div class="card">
+            <div class="card-header"> Choose website URL or HTML code</div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <pre class="card card-block card-header" *ngIf="value">The selected tab is: {{value}}</pre>
+                </div>
+                <tabset>
+                    <tab heading="Convert URL to PDF" class="mt-2" (selectTab)="onSelect($event)">
+                        <ng-container *ngTemplateOutlet="urlToPDF"></ng-container>
+                    </tab>
+                    <tab heading="Convert HTML to PDF" class="mt-2" (selectTab)="onSelect($event)">
+                        <ng-container *ngTemplateOutlet="htmlToPDF"></ng-container>
+                    </tab>
+                </tabset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #urlToPDF>
+    <form [formGroup]="urlToPdfForm" class="m-4">
+        <div class="form-group">
+            <label class="font-weight-bold" for="url">URL<em>*</em></label>
+            <input class="form-control" id="url" formControlName="url" type="text"
+                [ngClass]="{'is-invalid' : urlToPdfFormErrors.url}" placeholder="Enter website url you want to convert">
+            <div class="invalid-feedback" *ngIf="urlToPdfFormErrors.url">{{urlToPdfFormErrors.url}}</div>
+        </div>
+        <button class="btn btn-primary ml-1" type="submit" (click)="onSubmitUrlToPdfForm()">Convert To PDF</button>
+    </form>
+</ng-template>
+
+<ng-template #htmlToPDF>
+    <h4>Convert HTML to PDF</h4>
+    <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages</p>
+</ng-template>
