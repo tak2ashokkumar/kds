@@ -7,6 +7,7 @@ import { AppUtilityService } from 'src/app/app-core/app-utility.service';
 import { PublicApiService } from 'src/app/public-api/public-api.service';
 import { takeUntil } from 'rxjs/operators';
 import { HttpErrorResponse } from '@angular/common/http';
+import { AngularEditorConfig } from '@kolkov/angular-editor';
 
 @Component({
   selector: 'html-to-pdf-converter',
@@ -22,7 +23,12 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
   urlToPdfForm: FormGroup;
   urlToPdfFormErrors: any;
   urlToPdfFormValidationMessages: any;
-  urlToPdfDownloadRef: string = null;
+
+  htmlToPdfForm: FormGroup;
+  htmlToPdfFormErrors: any;
+  htmlToPdfFormValidationMessages: any;
+
+  config = editorConfig;
 
   constructor(private htmlToPdfService: HtmlToPdfConverterService,
     private publicApiService: PublicApiService,
@@ -43,11 +49,17 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
     this.urlToPdfFormValidationMessages = this.htmlToPdfService.urlToPdfFormValidationMessages;
   }
 
+  buildHtmlToPdfForm() {
+    this.htmlToPdfForm = this.htmlToPdfService.buildHTMLToPdfForm();
+    this.htmlToPdfFormErrors = this.htmlToPdfService.resetHTMLToPdfForm();
+    this.htmlToPdfFormValidationMessages = this.htmlToPdfService.htmlToPdfFormValidationMessages;
+  }
+
   onSelect(data: TabDirective): void {
     if (data.heading == 'Convert URL to PDF') {
       this.buildUrlToPdfForm();
     } else {
-
+      this.buildHtmlToPdfForm();
     }
   }
 
@@ -59,9 +71,30 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
       return false;
     } else {
       this.publicApiService.getPDFFromURL(this.urlToPdfForm.getRawValue().url).pipe(takeUntil(this.ngUnsubscribe)).subscribe(blob => {
-        const objectUrl = URL.createObjectURL(blob);
         const a = document.createElement('a');
-        a.href = objectUrl
+        const objectUrl = URL.createObjectURL(blob);
+        a.href = objectUrl;
+        a.download = 'archive.pdf';
+        a.click();
+        URL.revokeObjectURL(objectUrl);
+      }, (err: HttpErrorResponse) => {
+        console.log('err in convering to pdf is : ', err);
+      })
+    }
+  }
+
+  onSubmitHTMLToPdfForm() {
+    console.log('in onSubmitHTMLToPdfForm');
+    if (this.htmlToPdfForm.invalid) {
+      this.htmlToPdfFormErrors = this.utilService.validateForm(this.htmlToPdfForm, this.htmlToPdfFormValidationMessages, this.htmlToPdfFormErrors);
+      this.htmlToPdfForm.valueChanges
+        .subscribe((data: any) => { this.htmlToPdfFormErrors = this.utilService.validateForm(this.htmlToPdfForm, this.htmlToPdfFormValidationMessages, this.htmlToPdfFormErrors); });
+      return false;
+    } else {
+      this.publicApiService.getPDFFromHTML(this.htmlToPdfForm.getRawValue().htmlcontent).pipe(takeUntil(this.ngUnsubscribe)).subscribe(blob => {
+        const a = document.createElement('a');
+        const objectUrl = URL.createObjectURL(blob);
+        a.href = objectUrl;
         a.download = 'archive.pdf';
         a.click();
         URL.revokeObjectURL(objectUrl);
@@ -72,3 +105,49 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
   }
 
 }
+
+const editorConfig: AngularEditorConfig = {
+  editable: true,
+  spellcheck: true,
+  height: '15rem',
+  minHeight: '5rem',
+  maxHeight: 'auto',
+  width: 'auto',
+  minWidth: '0',
+  translate: 'yes',
+  enableToolbar: true,
+  showToolbar: true,
+  placeholder: 'Enter HTML code you want to convert',
+  defaultParagraphSeparator: 'p',
+  defaultFontName: 'Arial',
+  defaultFontSize: '',
+  fonts: [
+    { class: 'arial', name: 'Arial' },
+    { class: 'times-new-roman', name: 'Times New Roman' },
+    { class: 'calibri', name: 'Calibri' },
+    { class: 'comic-sans-ms', name: 'Comic Sans MS' }
+  ],
+  customClasses: [
+    {
+      name: 'quote',
+      class: 'quote',
+    },
+    {
+      name: 'redText',
+      class: 'redText'
+    },
+    {
+      name: 'titleText',
+      class: 'titleText',
+      tag: 'h1',
+    },
+  ],
+  uploadUrl: 'v1/image',
+  uploadWithCredentials: false,
+  sanitize: true,
+  toolbarPosition: 'top',
+  toolbarHiddenButtons: [
+    ['bold', 'italic'],
+    ['fontSize']
+  ]
+};

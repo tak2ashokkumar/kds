@@ -12,6 +12,8 @@ import { HtmlToPdfConverterComponent } from './html-to-pdf-converter/html-to-pdf
 import { CovidTrackerComponent } from './covid-tracker/covid-tracker.component';
 import { LoveCalculatorComponent } from './love-calculator/love-calculator.component';
 
+import { AngularEditorModule } from '@kolkov/angular-editor';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { LoveCalculatorComponent } from './love-calculator/love-calculator.compo
     TabsModule.forRoot(),
     AlertModule.forRoot(),
     PopoverModule.forRoot(),
-    NgpSortModule
+    NgpSortModule,
+    AngularEditorModule 
   ]
 })
 export class UtilitiesModule { }

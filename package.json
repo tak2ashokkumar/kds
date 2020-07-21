@@ -23,6 +23,7 @@
     "@coreui/chartjs": "^2.0.0",
     "@coreui/coreui": "^3.0.0",
     "@coreui/icons": "^1.0.1",
+    "@kolkov/angular-editor": "^1.1.2",
     "@popperjs/core": "^2.2.2",
     "@rxweb/reactive-form-validators": "^2.0.0-rc2",
     "bootstrap": "^4.4.1",

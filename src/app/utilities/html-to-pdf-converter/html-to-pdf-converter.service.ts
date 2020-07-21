@@ -25,4 +25,23 @@ export class HtmlToPdfConverterService {
       'url': ['', Validators.required]
     })
   }
+
+  resetHTMLToPdfForm() {
+    let UrlToPdfFormErrors = {
+      'htmlcontent': '',
+    };
+    return UrlToPdfFormErrors;
+  }
+
+  htmlToPdfFormValidationMessages = {
+    'htmlcontent': {
+      'required': 'HTML code is not provided to convert.'
+    },
+  };
+
+  buildHTMLToPdfForm(): FormGroup {
+    return this.builder.group({
+      'htmlcontent': ['', Validators.required]
+    })
+  }
 }
