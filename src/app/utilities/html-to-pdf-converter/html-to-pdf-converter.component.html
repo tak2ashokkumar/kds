@@ -1,19 +1,27 @@
 <div class="row mt-4" style="background-color: #fff;min-height: 70vh;">
-    <div class="col-12 my-3">
-        <div class="card">
-            <div class="card-header"> Choose website URL or HTML code</div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <pre class="card card-block card-header" *ngIf="value">The selected tab is: {{value}}</pre>
+    <div class="col-6 my-3">
+        <div class="card equalize-card">
+            <div class="card-body py-0">
+                <ng-container *ngTemplateOutlet="urlToPDF"></ng-container>
+                <h5 class="divider">OR</h5>
+                <div class="text-header mx-4 my-5 font-weight-bold">
+                    <span class="">If you want to convert your text content or html code, check the section provided
+                        right.</span>
+                    <ul class= "mt-2">
+                        <li> Right side section provides both text and html mode.</li>
+                        <li> Based on the requirement, switch to HTML or TEXT mode to provide your input.</li>
+                        <li> If you are done with your input, click on the button below to downlaod pdf with the
+                            provided content.</li>
+                    </ul>
                 </div>
-                <tabset>
-                    <tab heading="Convert URL to PDF" class="mt-2" (selectTab)="onSelect($event)">
-                        <ng-container *ngTemplateOutlet="urlToPDF"></ng-container>
-                    </tab>
-                    <tab heading="Convert HTML to PDF" class="mt-2" (selectTab)="onSelect($event)">
-                        <ng-container *ngTemplateOutlet="htmlToPDF"></ng-container>
-                    </tab>
-                </tabset>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 my-3">
+        <div class="card equalize-card">
+            <div class="card-body py-0">
+                <ng-container *ngTemplateOutlet="htmlToPDF"></ng-container>
             </div>
         </div>
     </div>
@@ -22,24 +30,45 @@
 <ng-template #urlToPDF>
     <form *ngIf="urlToPdfForm" [formGroup]="urlToPdfForm" class="m-4">
         <div class="form-group">
-            <label class="font-weight-bold" for="url">URL<em>*</em></label>
+            <div class="text-success font-weight-bold">
+                <span>*If you want to convert html form your website directly, Provide the website URL form
+                    below.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="font-weight-bold" for="url">URL</label>
             <input class="form-control" id="url" formControlName="url" type="text"
                 [ngClass]="{'is-invalid' : urlToPdfFormErrors.url}" placeholder="Enter website url you want to convert">
             <div class="invalid-feedback" *ngIf="urlToPdfFormErrors.url">{{urlToPdfFormErrors.url}}</div>
         </div>
-        <button class="btn btn-primary ml-1" type="submit" (click)="onSubmitUrlToPdfForm()">Convert To PDF</button>
+        <button class="btn btn-primary ml-1" type="submit" (click)="onSubmitUrlToPdfForm()" [disabled]="isAPIOn">
+            <span>Convert To PDF &nbsp; <i *ngIf="isAPIOn" class="fa fa-spin fa-spinner"></i></span>
+        </button>
     </form>
 </ng-template>
 
 <ng-template #htmlToPDF>
     <form *ngIf="htmlToPdfForm" [formGroup]="htmlToPdfForm" class="m-4">
         <div class="form-group">
-            <angular-editor id="htmlcontent" formControlName="htmlcontent" [config]="config"></angular-editor>
+            <div class="text-success font-weight-bold">
+                <span *ngIf="htmlEditorTextMode">* Editor is in TEXT mode now. Please click on '<>' in the menubar to
+                        make it HTML editor
+                </span>
+                <span *ngIf="!htmlEditorTextMode">* Editor is in HTML mode now. Please click on '<>' in the menubar to
+                        make it as Text editor </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <angular-editor id="htmlcontent" formControlName="htmlcontent" [config]="config" (viewMode)="changed()">
+            </angular-editor>
             <div class="invalid-feedback" *ngIf="htmlToPdfFormErrors.htmlcontent">{{htmlToPdfFormErrors.htmlcontent}}
             </div>
         </div>
-        <button class="btn btn-primary ml-1 inline-block" type="submit" (click)="onSubmitHTMLToPdfForm()">Convert To
-            PDF</button>
-        <span class="ml-4 text-danger" *ngIf="htmlToPdfFormErrors.htmlcontent">*{{htmlToPdfFormErrors.htmlcontent}}</span>
+        <button class="btn btn-primary ml-1 inline-block" type="submit" (click)="onSubmitHTMLToPdfForm()"
+            [disabled]="isAPIOn">
+            <span>Convert To PDF &nbsp; <i *ngIf="isAPIOn" class="fa fa-spin fa-spinner"></i></span>
+        </button>
+        <span class="ml-4 text-danger" *ngIf="htmlToPdfFormErrors.htmlcontent"> *{{htmlToPdfFormErrors.htmlcontent}}
+        </span>
     </form>
 </ng-template>

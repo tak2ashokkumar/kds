@@ -1,19 +1,9 @@
 <div class="row mt-4" style="background-color: #fff;min-height: 70vh;">
-    <!-- <div class="col-12 my-3" style="padding-left: 40%;">
-        <div class="btn-group" btnRadioGroup [(ngModel)]="uncheckableRadioModel">
-            <label class="btn btn-info" btnRadio="statistics" uncheckable tabindex="0" role="button">Statistics</label>
-            <label class="btn btn-info" btnRadio="countries" uncheckable tabindex="0" role="button">Countries</label>
-            <label class="btn btn-info" btnRadio="history" uncheckable tabindex="0" role="button">History</label>
-        </div>
-        <div class="input-group ml-5">
-            <input class="form-control" type="text" placeholder="Input group example" aria-label="Input group example"
-                aria-describedby="btnGroupAddon">
-            <button class="btn btn-sm btn-success pull-right ml-1" type="submit" (click)="getDetails()">Submit</button>
-        </div>
-    </div> -->
-
     <div class="col-12 my-2">
-        <div class="row">
+        <div class="row" style="margin-top: 15%;margin-left: 47%;" *ngIf="loadingData">
+            <i class="fa fa-spin fa-spinner" style="font-size: 60px;"></i>
+        </div>
+        <div class="row" *ngIf="!loadingData">
             <div class="col-xs-6 col-md-4 col-lg-3 col-xl-2"
                 *ngFor="let result of covidResults | sortBy: 'desc':'totalCases'">
                 <div class="card link" (click)="selectedResult = result" [popover]="template" [outsideClick]="true"
@@ -50,7 +40,7 @@
             <span>Positive Cases: {{selectedResult.totalCases}}</span>
         </div>
         <div class="list-group-item text-muted font-weight-bold">
-            <small class= "mr-3"> New Cases: {{selectedResult.newCases}}</small>
+            <small class="mr-3"> New Cases: {{selectedResult.newCases}}</small>
             <small class="mr-3"> Active Cases: {{selectedResult.activeCases}}</small>
             <small class=""> Recovered: {{selectedResult.recoveredCases}}</small> <br>
             <small class="text-muted mr-3"> New Deaths: {{selectedResult.newDeaths}}</small>

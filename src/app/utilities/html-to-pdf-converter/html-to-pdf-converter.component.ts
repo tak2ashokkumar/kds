@@ -27,6 +27,9 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
   htmlToPdfForm: FormGroup;
   htmlToPdfFormErrors: any;
   htmlToPdfFormValidationMessages: any;
+  htmlEditorTextMode: boolean = true;
+
+  isAPIOn: boolean = false;
 
   config = editorConfig;
 
@@ -36,6 +39,7 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.buildUrlToPdfForm();
+    this.buildHtmlToPdfForm();
   }
 
   ngOnDestroy() {
@@ -60,6 +64,11 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
       this.buildUrlToPdfForm();
     } else {
       this.buildHtmlToPdfForm();
+
+      // setTimeout(() => {
+      //   const element = document.getElementById('toggleEditorMode-htmlcontent');
+      //   element.click();
+      // })
     }
   }
 
@@ -70,7 +79,9 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
         .subscribe((data: any) => { this.urlToPdfFormErrors = this.utilService.validateForm(this.urlToPdfForm, this.urlToPdfFormValidationMessages, this.urlToPdfFormErrors); });
       return false;
     } else {
+      this.isAPIOn = true;
       this.publicApiService.getPDFFromURL(this.urlToPdfForm.getRawValue().url).pipe(takeUntil(this.ngUnsubscribe)).subscribe(blob => {
+        this.isAPIOn = false;
         const a = document.createElement('a');
         const objectUrl = URL.createObjectURL(blob);
         a.href = objectUrl;
@@ -78,29 +89,43 @@ export class HtmlToPdfConverterComponent implements OnInit, OnDestroy {
         a.click();
         URL.revokeObjectURL(objectUrl);
       }, (err: HttpErrorResponse) => {
-        console.log('err in convering to pdf is : ', err);
+        // console.log('err in convering to pdf is : ', err);
+        this.urlToPdfFormErrors.url = err.message;
+        this.isAPIOn = false;
       })
     }
   }
 
   onSubmitHTMLToPdfForm() {
-    console.log('in onSubmitHTMLToPdfForm');
     if (this.htmlToPdfForm.invalid) {
       this.htmlToPdfFormErrors = this.utilService.validateForm(this.htmlToPdfForm, this.htmlToPdfFormValidationMessages, this.htmlToPdfFormErrors);
       this.htmlToPdfForm.valueChanges
         .subscribe((data: any) => { this.htmlToPdfFormErrors = this.utilService.validateForm(this.htmlToPdfForm, this.htmlToPdfFormValidationMessages, this.htmlToPdfFormErrors); });
       return false;
     } else {
+      this.isAPIOn = true;
       this.publicApiService.getPDFFromHTML(this.htmlToPdfForm.getRawValue().htmlcontent).pipe(takeUntil(this.ngUnsubscribe)).subscribe(blob => {
+        this.isAPIOn = false;
         const a = document.createElement('a');
         const objectUrl = URL.createObjectURL(blob);
         a.href = objectUrl;
-        a.download = 'archive.pdf';
+        a.download = 'file.pdf';
         a.click();
         URL.revokeObjectURL(objectUrl);
       }, (err: HttpErrorResponse) => {
-        console.log('err in convering to pdf is : ', err);
+        // console.log('err in convering to pdf is : ', err);
+        this.htmlToPdfFormErrors.htmlcontent = err.message;
+        this.isAPIOn = false;
       })
+    }
+  }
+
+  changed() {
+    this.htmlEditorTextMode = !this.htmlEditorTextMode;
+    if (this.htmlEditorTextMode) {
+      this.config.placeholder = 'Enter Text here';
+    } else {
+      this.config.placeholder = 'Enter HTML code you want to convert';
     }
   }
 
@@ -117,7 +142,7 @@ const editorConfig: AngularEditorConfig = {
   translate: 'yes',
   enableToolbar: true,
   showToolbar: true,
-  placeholder: 'Enter HTML code you want to convert',
+  placeholder: 'Enter Text here',
   defaultParagraphSeparator: 'p',
   defaultFontName: 'Arial',
   defaultFontSize: '',
@@ -146,8 +171,5 @@ const editorConfig: AngularEditorConfig = {
   uploadWithCredentials: false,
   sanitize: true,
   toolbarPosition: 'top',
-  toolbarHiddenButtons: [
-    ['bold', 'italic'],
-    ['fontSize']
-  ]
+  toolbarHiddenButtons: []
 };

@@ -20,6 +20,7 @@ export class LoveCalculatorComponent implements OnInit {
   validationMessages: any;
 
   result: LoveCalculatorOutput = new LoveCalculatorOutput();
+  loadingData: boolean = false;
 
   constructor(private loveCalculatorService: LoveCalculatorService) {
   }
@@ -42,10 +43,13 @@ export class LoveCalculatorComponent implements OnInit {
         .subscribe((data: any) => { this.formErrors = this.loveCalculatorService.validateForm(this.form, this.validationMessages, this.formErrors); });
       return;
     } else {
+      this.loadingData = true;
       this.loveCalculatorService.getPercentageByNames(this.form.getRawValue()).pipe(takeUntil(this.ngUnsubscribe)).subscribe(data => {
         this.result = data;
+        this.loadingData = false;
       }, (err: HttpErrorResponse) => {
         console.log('err in calculating percentage is : ', err);
+        this.loadingData = false;
       })
     }
   }

@@ -49,7 +49,7 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
   }
 
   goToUtilities() {
-    this.router.navigate(['/utils/love-calculator'], { relativeTo: this.route.firstChild.parent });
+    this.router.navigate(['/utils/html-to-pdf'], { relativeTo: this.route.firstChild.parent });
   }
 
 }

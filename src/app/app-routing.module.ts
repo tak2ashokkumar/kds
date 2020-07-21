@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: '',
     // redirectTo: 'utils/covid', pathMatch: 'full'
-    redirectTo: 'referral-codes/bill_payments', pathMatch: 'full'
+    redirectTo: 'utils/html-to-pdf', pathMatch: 'full'
   },
   {
     path: '404',
