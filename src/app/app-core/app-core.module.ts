@@ -11,11 +11,12 @@ import { AlertModule } from 'ngx-bootstrap/alert';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
+import { FirebaseComponent } from './firebase.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [FirebaseComponent],
   imports: [],
   exports: [
     CommonModule,
@@ -31,6 +32,7 @@ import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
     TabsModule,
     ProgressbarModule,
     RxReactiveFormsModule,
+    FirebaseComponent
   ],
 })
 export class AppCoreModule { }

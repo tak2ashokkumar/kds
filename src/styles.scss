@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-body, .body {
+body,
+.body {
   background-color: #f4f3ef;
 }
 
@@ -17,10 +18,27 @@ body, .body {
   cursor: pointer;
 }
 
-.fs-60{
+.btn-link {
+  font-weight: 400;
+  color: #378ad8 !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: #2063a3 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fs-60 {
   font-size: 60% !important;
 }
 
 #sourceTexthtmlcontent {
   background-color: #fff !important;
+}
+
+.app-body {
+  margin-top: 50px;
 }

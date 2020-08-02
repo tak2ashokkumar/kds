@@ -15,14 +15,18 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class AppHeaderComponent implements OnInit, OnDestroy {
 
   private ngUnsubscribe = new Subject();
+  isUserLoggedIn: boolean = false;
+
   quote: QuoteDetailsViewData = new QuoteDetailsViewData();
   activeModule: string = null;
+  
   constructor(private headerService: AppHeaderService,
     private router: Router,
     private route: ActivatedRoute) {
     router.events.subscribe(val => {
       if (val instanceof NavigationEnd) {
         this.activeModule = val.url.split('/')[1]
+        console.log('this.activeModule : ', this.activeModule);
       }
     })
   }
@@ -42,6 +46,10 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
     }, (err: HttpErrorResponse) => {
       console.log('err : ', err);
     })
+  }
+
+  goToHome() {
+    this.router.navigate(['/home'], { relativeTo: this.route.parent });
   }
 
   goToReferrals() {

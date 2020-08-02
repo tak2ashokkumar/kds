@@ -1,0 +1,55 @@
+<div class="container" style="margin-top: 15%;">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card-group">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h1 class="text-header-dark">Login</h1>
+                        <p class="text-muted">Sign In to your account</p>
+                        <form *ngIf="loginForm" [formGroup]="loginForm">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Email"
+                                    formControlName="email" [ngClass]="{'is-invalid' : loginFormErrors.email}">
+                            </div>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="password" placeholder="Password"
+                                    formControlName="password" [ngClass]="{'is-invalid' : loginFormErrors.password}">
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-header-dark px-4" type="submit"
+                                    (click)="onSubmit()">Login</button>
+                            </div>
+                            <div class="col-6 text-right">
+                                <button class="btn btn-link px-0 font-weight-bold" type="button"
+                                    (click)="goToForgotPassword()">Forgot password?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-header-dark py-5 d-md-down-none" style="width:44%">
+                    <div class="card-body text-center">
+                        <div>
+                            <h2>Sign up</h2>
+                            <p>Don't have account with kiddy saves yet ? <br> Make one to saves money on your day to day
+                                activitities.</p>
+                            <button class="btn btn-lg btn-outline-light mt-3" type="button"
+                                (click)="goToSignUp()">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,8 @@
 $fa-font-path: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/" !default;
 
 $body-bg: #f4f3ef !default;
-
+$header-dark-bg: #213458 !default;
+$header-normal-bg: #455d8b !default;
 $sidebar-bg: #576071 !default;
 
 $white: #fff !default;
@@ -91,7 +92,7 @@ $theme-colors: map-merge(
 );
 
 // Brand Colors
-
+$google: #b00 !default;
 $facebook: #3b5998 !default;
 $twitter: #00aced !default;
 $linkedin: #4875b4 !default;
@@ -122,6 +123,7 @@ $vimeo: #aad450 !default;
 $brands-colors: () !default;
 $brands-colors: map-merge(
   (
+    "google": $google,
     "facebook": $facebook,
     "twitter": $twitter,
     "linkedin": $linkedin,

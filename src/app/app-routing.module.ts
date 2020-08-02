@@ -3,9 +3,12 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { AppMainComponent } from './app-main/app-main.component';
 import { InvalidRouteComponent } from './invalid-route/invalid-route.component';
 
-
 const routes: Routes = [
-  { path: 'default', component: AppMainComponent },
+  { path: 'home', component: AppMainComponent },
+  {
+    path: 'user',
+    loadChildren: () => import(`./user-management/user-management.module`).then(m => m.UserManagementModule)
+  },
   {
     path: 'utils',
     loadChildren: () => import(`./utilities/utilities.module`).then(m => m.UtilitiesModule)
@@ -16,14 +19,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    // redirectTo: 'utils/covid', pathMatch: 'full'
-    redirectTo: 'utils/html-to-pdf', pathMatch: 'full'
+    redirectTo: 'user/login', pathMatch: 'full'
   },
   {
     path: '404',
     component: InvalidRouteComponent,
   },
-  // { path: '**', redirectTo: '404' }
+  { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

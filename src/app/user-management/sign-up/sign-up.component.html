@@ -1,0 +1,96 @@
+<div class="container" style="margin-top: 10%;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mx-4">
+                <div class="card-body p-4 text-center">
+                    <p class="h2 mb-5 text-header-dark font-weight-bold">Sign Up</p>
+                    <form *ngIf="signUpForm" [formGroup]="signUpForm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Full Name" formControlName="name"
+                                [ngClass]="{'is-invalid' : signUpFormErrors.name}">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Email" formControlName="email"
+                                [ngClass]="{'is-invalid' : signUpFormErrors.email}">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="password" placeholder="Password"
+                                formControlName="password" [ngClass]="{'is-invalid' : signUpFormErrors.password}">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="password" placeholder="Confirm Password"
+                                formControlName="confirmPassword"
+                                [ngClass]="{'is-invalid' : signUpFormErrors.confirmPassword}">
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-left">
+                                <button class="btn btn-header-dark px-5" type="submit" (click)="onSubmit()"
+                                    [disabled]="loadingData">Register</button>
+                            </div>
+                            <div class="col-8 text-right">
+                                <p class="pull-right mt-2 mb-0 text-header-dark font-weight-bold"> Already registered,
+                                    <a class="btn-link font-weight-bold" (click)="goToLogin()">click here</a> to login.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer p-4 mt-2">
+                    <div class="row">
+                        <div class="col-2 text-center">
+                            <button class="btn btn-youtube" type="button">
+                                <span><i class="fa fa-google"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="btn btn-facebook" type="button">
+                                <span><i class="fa fa-facebook"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="btn btn-twitter" type="button">
+                                <span><i class="fa fa-twitter"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="btn btn-linkedin" type="button">
+                                <span><i class="fa fa-linkedin"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="btn btn-github" type="button">
+                                <span><i class="fa fa-github"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="btn btn-stack-overflow" type="button">
+                                <span><i class="fa fa-stack-overflow"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<firebase (onCrud)="onCrud($event)"></firebase>

@@ -22,7 +22,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/@coreui/icons/css/brand.min.css",
               "src/assets/scss/style.scss",
               "src/styles.scss"
             ],
@@ -125,7 +124,8 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "kds",
   "schematics": {
     "@schematics/angular:component": {
